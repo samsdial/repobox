@@ -39,5 +39,24 @@ $(document).ready(function($){
         fade: true,
         cssEase: 'linear'
     });
+    $('.slider_recommend').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        //autoplay: true,
+        //autoplaySpeed: 2000,
+    });
+    //.slider_quote_people
+    $('.slider_quote_people').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        //autoplay: true,
+        //eautoplaySpeed: 2000,
+    });
+    $('.slider_quote_medios').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        //autoplay: true,
+        //eautoplaySpeed: 2000,
+    });
 });
 
