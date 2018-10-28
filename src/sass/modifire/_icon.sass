@@ -1,0 +1,56 @@
+@font-face
+    font-family: 'Eurostyle'
+    font-style: normal
+    font-weight: normal
+    src: local('Eurostile'), url('/fonts/eurostile.woff') format('woff')
+
+@font-face
+    font-family: 'EuroStyle Normal'
+    font-style: normal
+    font-weight: normal
+    src: local('EuroStyle Normal'), url('/fonts/euro-style-normal') format('woff')
+
+//
+//[class^="icon-"], [class*=" icon-"]
+//    font-family: 'icomoon' !important
+//    speak: none
+//    font-style: normal
+//    font-weight: normal
+//    font-variant: normal
+//    text-transform: none
+//    line-height: 1
+//    -webkit-font-smoothing: antialiased
+//    -moz-osx-font-smoothing: grayscale
+
+.icon:before
+    content: ""
+    display: inline-block
+    background-repeat: no-repeat
+    -webkit-background-size: contain
+    background-size: contain
+    background-position: 0 0
+    text-align: center
+.icon
+    &-social
+        vertical-align: middle
+        &:before
+            width: 17px
+            height: 17px
+            vertical-align: middle
+    &_facebook:before
+        background-image: url('#{$gitPath}theme/icon_facebook.svg')
+
+    &_instagram:before
+        background-image: url('#{$gitPath}theme/icon_instagram.svg')
+
+    &_twitter:before
+        background-image: url('#{$gitPath}theme/icon_twitter.svg')
+        margin-top: 5px
+
+//
+.icon_menu--svg
+    display: inline-block
+    height: 60px
+    width: 60px
+    padding: .25rem 1.75rem
+    filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.5))

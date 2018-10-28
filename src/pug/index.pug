@@ -1,0 +1,54 @@
+extends ./base/layout.pug
+
+block content
+    include _header.pug
+    .overlay.overlay_contentpush
+        button.overlay_close.btn_menu
+            span.icon_menu--svg.cl--white
+                svg#icon-close(viewbox='0 0 24 24' width='100%' height='100%')
+                    title close
+                    path(d='M21 4.565L19.435 3 12 10.435 4.565 3 3 4.565 10.435 12 3 19.435 4.565 21 12 13.565 19.435 21 21 19.435 13.565 12z')
+
+            span.cl--white Close
+        .navbar_full
+            ul.txt_upper
+                li.
+                    a(href="#") List Item 1
+                li
+                    a(href="#") List Item 2
+    .wrapper
+        section
+            ul.slider_intro.pd_bottom--x100
+                li.slider_item.bgc_grad_vertical
+                    .row.align-items-center
+                        .col.txt_center
+                            | image
+                        .col.cl--white
+                            .title.mb-2
+                                h2.display-2.txt_bold Ahorrar es simple
+                            .intro.mb-5
+                                p.h4 Regístrate gratis y disfruta del mejor casillero virtual de Colombia.
+                            .action.mb-2
+                                ul.list--inline.list_two_item
+                                    li
+                                        a.btn.btn_site--white.cl--blue.btn-sm.btn_radio.btn_full--lg(href='#')
+                                            i.fa
+                                            | Obtén tu casillero gratis
+                                    li
+                                        a.btn.btn_outline_white.btn-sm.btn_radio.btn_full--lg(href='#')
+                                            i.fa
+                                            | Obtén tu casillero gratis
+                li.slider_item
+                    .row.align-items-center
+                        .col.txt_center
+                            | image 2
+                        .col.cl--white
+                            .title.txt_bold
+                                h2.display-2 Ahorrar es simple
+        section.bgc--white
+            .container
+                .col
+                    .title.txt_center
+                        h2.display-1.txt_bold Ahorrar es simple
+
+    include _footer.pug
