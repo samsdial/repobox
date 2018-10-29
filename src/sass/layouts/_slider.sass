@@ -2,3 +2,29 @@
   &_intro,
   &_item .row
     height: 80vh
+  &_recommend
+    height: 111px
+//ajustes slider General
+//.slick-dots li.slick-active button:before
+.slider
+  &_intro
+    .slick-dots
+      bottom: 150px
+      left: 150px
+      li
+        display: block
+        button
+          &:before
+            color: transparent
+            background-color: transparent
+            border: 1px solid white
+            border-radius: 50%
+            width: 8px
+            height: 8px
+            opacity: 1
+        &.slick-active
+          button
+            &:before
+              background-color: white
+              color: transparent
+              opacity: 1

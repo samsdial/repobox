@@ -2,14 +2,32 @@
 .title,
 .subtitle,
 .intro,
+.action,
 .paragraf
     display: block
+    position: relative
 .paragraf
     &_em2
         p
             +font-size(1.5)
+
+//Deco txt
+.subtitle_line:after,
+.title_line:after
+    content: ""
+    display: inline-block
+    text-align: center
+    background: $gray
+    width: 7%
+    height: 2px
+.title_line--gains:after
+    background: $dimGray
 //.tag_data
 .txt
+    &_two
+        font-family: $second-font
+    &_semibold
+        font-weight: 400
     &_bold
         font-weight: bold
     &_weight
@@ -38,58 +56,88 @@
     &_size
         &--em1
             +font-size(1.5)
+            line-height: 1.1
             li,
             p,
             b,
             span
                 +font-size(1.5)
+                line-height: 1.1
             +heading
                 +font-size(1.5)
+                line-height: 1.1
         &--em2
             +font-size(2)
+            line-height: 1.1
             li,
             p,
             b,
             span
                 +font-size(2)
+                line-height: 1.1
             +heading
                 +font-size(2)
+                line-height: 1.1
+            &a
+                +font-size(2.5)
+                line-height: 1.1
+                li,
+                p,
+                b,
+                span
+                    +font-size(2.5)
+                    line-height: 1.1
+                +heading
+                    +font-size(2.5)
+                    line-height: 1.1
         &--em3
             +font-size(3)
+            line-height: 1.1
             li,
             p,
             b,
             span
                 +font-size(3)
+                line-height: 1.1
             +heading
                 +font-size(3)
+                line-height: 1.1
         &--em4
             +font-size(4)
+            line-height: 1.1
             li,
             p,
             b,
             span
                 +font-size(4)
+                line-height: 1.1
             +heading
                 +font-size(4)
+                line-height: 1.1
         &--em5
             +font-size(5)
+            line-height: 1.1
             li,
             p,
             b,
             span
                 +font-size(5)
+                line-height: 1.1
             +heading
                 +font-size(5)
-        //&--em6
-        //    +font-size(6)
-        //    li,
-        //    p,
-        //    b,
-        //    span
-        //        +font-size(6)
-        //    +heading
-        //        +font-size(6)
+                line-height: 1.1
+        &--em6
+            +font-size(7)
+            line-height: 1.1
+            li,
+            p,
+            b,
+            span
+                +font-size(7)
+                line-height: 1.1
+            +heading
+                +font-size(7)
+                line-height: 1.1
     &_completed
         text-decoration: line-through
         font-style: italic

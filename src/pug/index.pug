@@ -18,11 +18,11 @@ block content
                     a(href="#") List Item 2
     .wrapper
         section
-            ul.slider_intro.pd_bottom--x100
-                li.slider_item.bgc_grad_vertical
+            ul.slider_intro
+                li.slider_item.bgc_grad_vertical.pd_top--x50
                     .row.align-items-center
                         .col.txt_center
-                            | image
+                            .icon_smartphone(style="background-image: url('https://place-hold.it/442')")
                         .col.cl--white
                             .title.mb-2
                                 h2.display-2.txt_bold Ahorrar es simple
@@ -38,76 +38,78 @@ block content
                                         a.btn.btn_outline_white.btn-sm.btn_radio.btn_full--lg(href='#')
                                             i.fa
                                             | Obtén tu casillero gratis
-                li.slider_item
+                li.slider_item.bgc_grad_vertical.pd_top--x50
                     .row.align-items-center
                         .col.txt_center
-                            | image 2
+                            .icon_smartphone(style="background-image: url('https://place-hold.it/442')")
                         .col.cl--white
                             .title.txt_bold
                                 h2.display-2 Ahorrar es simple
         //Condor Box
-        section
+        section.py-5
             .container
                 .row
+                    .col-8.mx-auto.txt_center.mg_top--x100
+                        .title.mb-4
+                            h2.txt_size--em6.txt_bold Condor box
+                        .subtitle.mb-4
+                            h3 ¡Sencillo, seguro, rápido y muy económico!
+                        .paragraf.mb-4
+                            p.txt_size--em2.cl--gray Comprar lo que siempre soñaste jamás fue tan fácil. En Condor Box te brindamos una experiencia personalizada para que disfrutes de las ofertas extraordinarias del comercio electrónico de Estados Unidos. Si no tienes tarjetas de crédito, nosotros compramos por ti.
+        section.py-5
+            .container
+                .row.d-flex.align-items-center
                     .col.txt_center
-                        .title
-                            h2.display-1.txt_bold Condor box
-                        .subtitle
-                            h5 ¡Sencillo, seguro, rápido y muy económico!
-                        .paragraf
-                            p Comprar lo que siempre soñaste jamás fue tan fácil. En Condor Box te brindamos una experiencia personalizada para que disfrutes de las ofertas extraordinarias del comercio electrónico de Estados Unidos. Si no tienes tarjetas de crédito, nosotros compramos por ti.
-                .row
-                    .col.txt_center
-                        img(src="eco.png")
+                        img(src="https://place-hold.it/442")
                     .col
-                        .title.title_line
-                            h3 #ConsumoInteligente
+                        .title.title_line.title_line--gains.mb-4
+                            .txt_two.txt_size--em4.cl--darkgray #ConsumoInteligente
                         .paragraf
-                            p Ahorra hasta el 80% respecto al valor en Colombia de los productos que deseas.
+                            p.txt_bold Ahorra hasta el 80% respecto al valor en Colombia de los productos que deseas.
         //Así de Fácil pasos
         section
             .container
                 .row
-                    .col.txt_center
-                        .title
-                            h2 Así de fácil
+                    .col.txt_center.py-5
+                        .title.mb-4
+                            .txt_two.txt_size--em5.cl--darkgray Así de fácil
                 .row
                     .col.txt_center
-                        .title
-                            h2.display-2 1
-                        .subtitle
-                            h4 Register
+                        .title.mb-4
+                            h2.display-2 01
+                        .subtitle.mb-2
+                            h4.txt_size--em3.cl--gray Regístrate
                         .paragraf
-                            p gratis y obtén tu dirección y casillero en los EEUU.
+                            p.txt_bold gratis y obtén tu dirección y casillero en los EEUU.
                     .col.txt_center
-                        .title
-                            h2.display-2 2
-                        .subtitle
-                            h4 Register
+                        .title.mb-4
+                            h2.display-2 02
+                        .subtitle.mb-2
+                            h4.txt_size--em3.cl--gray Compra
                         .paragraf
-                            p en cualquier tienda online. Si no tienes tarjeta de crédito, nosotros compramos por ti.
+                            p.txt_bold en cualquier tienda online. Si no tienes tarjeta de crédito, nosotros compramos por ti.
                     .col.txt_center
-                        .title
-                            h2.display-2 3
-                        .subtitle
-                            h4 Register
+                        .title.mb-4
+                            h2.display-2 03
+                        .subtitle.mb-2
+                            h4.txt_size--em3.cl--gray Envía
                         .paragraf
-                            p tus compras a tu casillero. Cuando lleguen te avisaremos.
+                            p.txt_bold tus compras a tu casillero. Cuando lleguen te avisaremos.
                     .col.txt_center
-                        .title
-                            h2.display-2 4
-                        .subtitle
-                            h4 Register
+                        .title.mb-4
+                            h2.display-2 04
+                        .subtitle.mb-2
+                            h4.txt_size--em3.cl--gray Disfruta
                         .paragraf
-                            p de tus compras generando la orden de envío a Colombia desde cualquier dispositivo a través de tu cuenta de casillero.
+                            p.txt_bold de tus compras generando la orden de envío a Colombia desde cualquier dispositivo a través de tu cuenta de casillero.
 
         //Hemos diseñado el mejor
-        section
+        section.py-5
             .container
                 .row
-                    .col.txt_center
-                        .title
-                            h2.display-2 Hemos diseñado el mejor Casillero Virtual de Colombia
+                    .col-12.col-md-8.mx-auto.txt_center.mb-5
+                        .title.mb-4
+                            .txt_two.txt_size--em5.cl--darkgray Hemos diseñado el mejor Casillero Virtual de Colombia
                 .row
                     .col-12.col-md-4.txt_center
                         span.icon.icon_key
@@ -153,182 +155,188 @@ block content
                             p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
 
         //Cotizador
-        section
+        section.py-5
             .container
                 .row
                     .col.txt_center
-                        .title
-                            h2 Cotiza tu envío
-                        .subtitle
-                            h3 y comprueba porque somos el casillero más económico
+                        .title.mb-4
+                            .txt_semibold.txt_two.txt_size--em4.cl--gray Cotiza tu envío
+                        .subtitle.mb-5
+                            p.txt_size--em2a.cl--gray y comprueba porque somos el casillero más económico
                 .row
                     //insert iframe
-                    .w-50.mx-auto.txt_center Iframe
+                    .w-50.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x20
+                        | Iframe
         //CalltoAction
         section
             .container
                 .row
-                    .col
-                        .title
-                            h2 ¿Ustedes son un servicio de compras como Amazon o Ebay?
-                        .subtitle
-                            h4 Es normal tener dudas. Responde aquí todas las preguntas que tienes.
-                        .action
-                            a.btn.btn_site--white.cl--blue.btn-sm.btn_radio.btn_full--lg(href='#')
+                    .col-5.align-self-start
+                        .title.mb-4
+                            .txt_two.txt_size--em4.cl--gray ¿Ustedes son un <br> servicio de compras <br> como Amazon o Ebay?
+                        .subtitle.mb-5
+                            p.txt_size--em2a.cl--gray Es normal tener dudas. Responde aquí todas las preguntas que tienes.
+                        .action.mb-5
+                            a.btn.btn_site--white.cl--red.btn-sm.btn_radio.btn_full--lg(href='#')
                                 i.fa
                                 | Preguntas frecuentes
-                    .col.txt_right
-                        .title
-                            h2 Escríbenos con confianza
-                        .subtitle
-                            h3 Te enviaremos toda la información que solicites y te brindaremos la mejor asesoria.
+                    .col-2
+                    .col-5.align-self-end.txt_right.pd_top--x100
+                        .title.mb-4
+                            .txt_two.txt_size--em4.cl--gray
+                                | Escríbenos
+                                br
+                                span.txt_bold con confianza
+                        .subtitle.mb-5
+                            p.txt_size--em2a.cl--gray Te enviaremos toda la información que solicites y te brindaremos la mejor asesoria.
                         .action
                             a.btn.btn_site--white.cl--blue.btn-sm.btn_radio.btn_full--lg(href='#')
                                 i.fa
                                 | Contáctanos
 
         //Descubre
-        section
+        section.py-5
             .container
                 .row
-                    .col.txt_center
-                        .title
-                            h2 Descubre miles de productos en oferta
-                        .paragraf
-                            h3 Estas son algunas páginas recomendadas
-            .container
-                ul.slider_recommend
-                    li.slider_item
-                        .row
-                            .col.txt_center
-                                img(src="https://place-hold.it/150")
-                    li.slider_item
-                        .row
-                            .col.txt_center
-                                img(src="https://place-hold.it/150")
-                    li.slider_item
-                        .row
-                            .col.txt_center
-                                img(src="https://place-hold.it/150")
-                    li.slider_item
-                        .row
-                            .col.txt_center
-                                img(src="https://place-hold.it/150")
-                    li.slider_item
-                        .row
-                            .col.txt_center
-                                img(src="https://place-hold.it/150")
-                    li.slider_item
-                        .row
-                            .col.txt_center
-                                img(src="https://place-hold.it/150")
+                    .col.txt_center.mg_bottom--x40
+                        .title.mb-3
+                            .txt_two.txt_size--em4.cl--darkgray Descubre miles de productos <br> en oferta
+                        .paragraf.mb-5
+                            .h3.cl--gray Estas son algunas páginas recomendadas
+            .full-container
+                .w-75.mx-auto.py-5
+                    ul.slider_recommend
+                        li.slider_item
+                            .row
+                                .col
+                                    .txt_center
+                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                        li.slider_item
+                            .row
+                                .col
+                                    .txt_center
+                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                        li.slider_item
+                            .row
+                                .col
+                                    .txt_center
+                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                        li.slider_item
+                            .row
+                                .col
+                                    .txt_center
+                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                        li.slider_item
+                            .row
+                                .col
+                                    .txt_center
+                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                        li.slider_item
+                            .row
+                                .col
+                                    .txt_center
+                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+
         //Que Dicen
         section
-            .container
+            .container.py-5
                 .row
-                    .col.txt_center
-                        .title
-                            h2 Esto dicen sobre Condor Box
-                        .icon.icon_quote
+                    .w-50.mx-auto.txt_center
+                        .title.mb-5
+                            .txt_two.txt_size--em4.cl--darkgray Esto dicen sobre Condor Box
+                        .icon.icon_quote.mb-5
                         .subtitle.subtitle_line
                             h3 Nuestros usuarios
+            .full_container
                 //slider people
-                .row
-                    .col
-                        ul.slider_quote_people
-                            .li
-                                .row
-                                    .col.bgc--white
-                                        .icon.icon_people
-                                        .title
-                                            h3 Beto Pérez
-                                        .quote.quote_peope
-                                            | “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
-                                        .box_reviews
-                                            ul.list_reviews
-                                                li
-                                                    span.icon.icon_start
-                                                li
-                                                    span.icon.icon_start
-                            .li
-                                .row
-                                    .col.bgc--white
-                                        .icon.icon_people
-                                        .title
-                                            h3 Lina t
-                                        .quote.quote_peope
-                                            | “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
-                                        .box_reviews
-                                            ul.list_reviews
-                                                li
-                                                    span.icon.icon_start
-                                                li
-                                                    span.icon.icon_start
-                            .li
-                                .row
-                                    .col.bgc--white
-                                        .icon.icon_people
-                                        .title
-                                            h3 Lina t
-                                        .quote.quote_peope
-                                            | “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
-                                        .box_reviews
-                                            ul.list_reviews
-                                                li
-                                                    span.icon.icon_start
-                                                li
-                                                    span.icon.icon_start
-                            .li
-                                .row
-                                    .col.bgc--white
-                                        .icon.icon_people
-                                        .title
-                                            h3 Lina t
-                                        .quote.quote_peope
-                                            | “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
-                                        .box_reviews
-                                            ul.list_reviews
-                                                li
-                                                    span.icon.icon_start
-                                                li
-                                                    span.icon.icon_start
-                            .li
-                                .row
-                                    .col.bgc--white
-                                        .icon.icon_people
-                                        .title
-                                            h3 Lina t
-                                        .quote_peope
-                                            | “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
-                                        .box_reviews
-                                            .star-rating
-                                                span(style='width: 25%')
+                .w-75.mx-auto
+                    ul.slider_quote_people
+                        .li
+                            .col
+                                .txt_center
+                                    .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
+                                .bgc--white.txt_center.pd_box--x20
+                                    .title.cl--darkgray.pd_top--x30.mb-3
+                                        h3 Andrea Gomez
+                                    .quote.quote_peope.txt_two.mb-5
+                                        p “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
+                                    .box_reviews
+                                        .star-rating
+                                            span.rating_size--50
+                        .li
+                            .col
+                                .txt_center
+                                    .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
+                                .bgc--white.txt_center.pd_box--x20
+                                    .title.cl--darkgray.pd_top--x30.mb-3
+                                        h3 Andrea Gomez
+                                    .quote.quote_peope.txt_two.mb-5
+                                        p “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
+                                    .box_reviews
+                                        .star-rating
+                                            span.rating_size--50
+                        .li
+                            .col
+                                .txt_center
+                                    .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
+                                .bgc--white.txt_center.pd_box--x20
+                                    .title.cl--darkgray.pd_top--x30.mb-3
+                                        h3 Andrea Gomez
+                                    .quote.quote_peope.txt_two.mb-5
+                                        p “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
+                                    .box_reviews
+                                        .star-rating
+                                            span.rating_size--50
+                        .li
+                            .col
+                                .txt_center
+                                    .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
+                                .bgc--white.txt_center.pd_box--x20
+                                    .title.cl--darkgray.pd_top--x30.mb-3
+                                        h3 Andrea Gomez
+                                    .quote.quote_peope.txt_two.mb-5
+                                        p “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
+                                    .box_reviews
+                                        .star-rating
+                                            span.rating_size--50
+                        .li
+                            .col
+                                .txt_center
+                                    .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
+                                .bgc--white.txt_center.pd_box--x20
+                                    .title.cl--darkgray.pd_top--x30.mb-3
+                                        h3 Andrea Gomez
+                                    .quote.quote_peope.txt_two.mb-5
+                                        p “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
+                                    .box_reviews
+                                        .star-rating
+                                            span.rating_size--50
 
-
-
+            .container.py-5
+                // title medios
                 .row
                     .col.txt_center
-                        .icon.icon_quote
-                        .subtitle.subtitle_line
+                        .icon.icon_quote.mb-5
+                        .subtitle.subtitle_line.cl--darkgray
                             h3 Medios de comunicación
                 //slider medios
                 .row
                     .col
-                        ul.slider_quote_medios
+                        ul.slider_quote_medios.py-5
                             .li
                                 .row
-                                    .w-50.mx-auto.bgc--white.txt_center
-                                        .quote.quote_medios
-                                            | “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
-                                        .action
-                                            a(href="#") Leer Articulo
-                                        .icon.icon_medio
-                            .li
+                                    .w-50.mx-auto.txt_center
+                                        .quote.quote_medios.txt_two.txt_size--em2a.cl--darkgray
+                                            | “Comercio electrónico en Colombia ha crecido un 64% en los últimos tres años”
+                                        .action.mb-5
+                                            a.txt_bold(href="#") Leer artículo
+                                        .icon.icon_medio.icon_medio--semana
+                            .lis
                                 .row
-                                    .w-50.mx-auto.bgc--white.txt_center
-                                        .quote.quote_medios
-                                            | “ Es una excelente opción, el precio es bastante favorable, no cobran por re empacar varios pedidos, son muy ágiles en el despacho y la opción de pagar por transferencia bancaria Bancolombia es un excelente opción para hacer todo mas fácil. ”
-                                        .action
-                                            a(href="#") Leer Articulo
-                                        .icon.icon_medio
+                                    .w-50.mx-auto.txt_center.txt_two
+                                        .quote.quote_medios.txt_two.txt_size--em2a.cl--darkgray
+                                            | “Comercio electrónico en Colombia ha crecido un 64% en los últimos tres años”
+                                        .action.mb-5
+                                            a.txt_bold(href="#") Leer articulo
+                                        .icon.icon_medio.icon_medio--semana
     include _footer.pug
