@@ -30,3 +30,52 @@
               background-color: white
               color: transparent
               opacity: 1
+  &-nav
+    ul.slick-dots
+      li
+        button
+          width: 500px
+          line-height: 1.1
+          text-align: left
+        &:nth-child(1)
+          button:after
+            content: "Únete a Condor Box"
+
+        &:nth-child(2)
+          button:after
+            content: "Promo del mes"
+
+        &:nth-child(3)
+          button:after
+            content: "Tarida única"
+
+        &:nth-child(4)
+          button:after
+            content: "Casilleros para empresas"
+
+        button
+          &:after
+            color: $white
+            display: inline-block
+            font-size: 1.2rem
+            margin-left: 15px
+            opacity: 0.3
+            font-family: $primary-font
+            font-weight: 700
+            vertical-align: middle
+          &:before
+            color: white
+            vertical-align: middle
+        &.slick-active
+          button:after
+            opacity: 1
+
+    .slick-dots li.slick-active button:before
+      color: white
+    //li.item
+      width: 100px !important
+      height: 24px
+    //li.item:before
+      content: "hola"
+      color: $white
+      display: inline-block

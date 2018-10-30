@@ -49,15 +49,57 @@ $(document).ready(function($){
     $('.slider_recommend').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        //autoplay: true,
-        //autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
     //.slider_quote_people
     $('.slider_quote_people').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        //autoplay: true,
-        //eautoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
     $('.slider_quote_medios').slick({
         slidesToShow: 1,
@@ -85,5 +127,31 @@ $(document).ready(function($){
             $("#logo").removeClass("logo_cobox--color");
         }
     });
+    // Calculadora
+    $('#calculate').click(function(e) {
+        var weight = $('#weight').val();
+        var declared = $('#declared').val();
+        var total = 0;
+        var percentage = 0;
+        if(weight != undefined && weight != null && weight != "" &&
+            declared != undefined && declared != null && declared != "") {
+            if(weight > 0 && declared > 0) {
+                if(weight > 110) {
+                    alert('el peso máximo permitido por guía no puede superar las 110 libras.')
+                }else{
+                    weight < 7 ? weight = 7 : weight = weight;
+                    declared < 30 ? declared = 30 : declared = declared;
+                    declared <=200 ? percentage = 0.14 : percentage = 0.30;
+                    total = ( (weight*1.70) + (declared*percentage) + 5 );
+                    total = (Math.round(total*100)/100).toFixed(1);
+                    $('#total').text('$'+total+' USD');
+                }
+            }else{
+                alert('Los valores deben ser superiores a 0');
+            }
+        }else{
+            alert('Diligenciar los campos');
+        }
+    });
 });
-
+AOS.init();

@@ -69,7 +69,7 @@
 .icon
     &_medio
         &--semana:before
-            background-image: url('#{$gitPath}medio/logo_semana.png')
+            background-image: urlmixi('#{$gitPath}medio/logo_semana.png')f
 //People
 .icon
     &_people
@@ -94,16 +94,23 @@
         background-size: cover
         background-position: center center
         vertical-align: middle
-
+    &_bgi
+        +MQMAX(S)
+            height: 135px
+            margin-top: 155px
     &_smartphone
-        width: 550px
-        height: 585px
+        width: 200px
+        height: 200px
         display: inline-block
         background-repeat: no-repeat
         -webkit-background-size: 100%
         background-size: 100%
-        background-position: center top
+        background-position: center bottom
         vertical-align: middle
+        +MQ(S)
+            width: 550px
+            height: 585px
+            background-position: center top
 
     &_condor_box
         width: 100%
@@ -118,7 +125,10 @@
     &_txt01,
     &_txt02,
     &_txt03,
-    &_txt04
+    &_txt04,
+    &_rastreo,
+    &_rastreo-pin,
+    &_hi
         width: 104px
         height: 72px
         vertical-align: middle
@@ -133,6 +143,14 @@
         background-image: url('#{$gitPath}theme/txt_03.svg')
     &_txt04
         background-image: url('#{$gitPath}theme/txt_04.svg')
+    &_rastreo
+        background-image: url('#{$gitPath}theme/title_rastrear.svg')
+        width: 400px
+    &_rastreo-pin
+        background-image: url('#{$gitPath}theme/icon_rastrear.svg')
+    &_hi
+        background-image: url('#{$gitPath}theme/title_hi.svg')
+        width: 400px
 // icon locker svg items
 .icon
     &_key,

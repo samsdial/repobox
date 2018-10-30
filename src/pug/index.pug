@@ -20,10 +20,10 @@ block content
         section.position-relative.slider_overflow
             ul.slider_intro
                 li.slider_item.bgc_grad_vertical1.pd_top--x50
-                    .row.align-items-center
-                        .col-12.col-sm-6.txt_center
+                    .row.align-items-sm-center
+                        .col-12.col-sm-6.txt_center.icon_bgi(data-aos="fade-up")
                             .icon_smartphone(style="background-image: url('images/slider/img_cell--01.png')")
-                        .col-12.col-sm-6.cl--white
+                        .col-12.col-sm-6.cl--white.text-center.text-sm-left(data-aos="fade-down")
                             .title.mb-2
                                 .txt_two.display-2.txt_semisemibold Ahorrar es simple
                             .intro.mb-5
@@ -39,10 +39,10 @@ block content
                                             i.fa
                                             | Obtén tu casillero gratis
                 li.slider_item.bgc_grad_vertical2.pd_top--x50
-                    .row.align-items-center
-                        .col-12.col-sm-6.txt_center
+                    .row.align-items-sm-center(data-aos="fade-down")
+                        .col-12.col-sm-6.txt_center.icon_bgi
                             .icon_smartphone(style="background-image: url('images/slider/img_cell--02.png')")
-                        .col-12.col-sm-6.cl--white
+                        .col-12.col-sm-6.cl--white.text-center.text-sm-left
                             .title.mb-2
                                 .txt_two.display-2.txt_semisemibold Black Friday!
                             .intro.mb-5
@@ -57,10 +57,10 @@ block content
                                             i.fa
                                             | Ver las mejores ofertas
                 li.slider_item.bgc_grad_vertical3.pd_top--x50
-                    .row.align-items-center
-                        .col-12.col-sm-6.txt_center
+                    .row.align-items-sm-center(data-aos="fade-down")
+                        .col-12.col-sm-6.txt_center.icon_bgi
                             .icon_smartphone(style="background-image: url('images/slider/img_cell--02.png')")
-                        .col-12.col-sm-6.cl--white
+                        .col-12.col-sm-6.cl--white.text-center.text-sm-left
                             .title.mb-2
                                 .txt_two.display-2.txt_semisemibold ¡Tarifa de locura!
                             .intro.mb-5
@@ -73,10 +73,10 @@ block content
                                             i.fa
                                             | Saber más
                 li.slider_item.bgc_grad_vertical4.pd_top--x50
-                    .row.align-items-center
-                        .col-12.col-sm-6.txt_center
+                    .row.align-items-sm-center(data-aos="fade-down")
+                        .col-12.col-sm-6.txt_center.icon_bgi
                             .icon_smartphone(style="background-image: url('images/slider/img_cell--02.png')")
-                        .col-12.col-sm-6.cl--white
+                        .col-12.col-sm-6.cl--white.text-center.text-sm-left
                             .title.mb-2
                                 .txt_two.display-2.txt_semisemibold Casillero Corporativo
                             .intro.mb-5
@@ -89,21 +89,14 @@ block content
                                             i.fa
                                             | Contáctanos
 
-            .box_slider_nav
+            .box_slider_nav.d-none.d-sm-block(data-aos="fade-up")
                 ul.slider-nav.list--inline
-                    li.item.txt-center
-                        .w-100
-                            span uno
-                    li.item.txt-center
-                        .w-100
-                            span dos
-                    li.item.txt-center
-                        .w-100
-                            span tres
-                    li.item.txt-center
-                        .w-100
-                            span cuatro
-            .box_social--fixed
+                    li.item
+                    li.item
+                    li.item
+                    li.item
+
+            .box_social--fixed.d-none.d-sm-block(data-aos="fade-up")
                 ul.text-center
                     li.nav-item
                         a.mx-auto(href='facebook', target="_blank")
@@ -119,52 +112,52 @@ block content
             .container
                 .row
                     .col-8.mx-auto.txt_center.mg_top--x100
-                        .title.mb-4
+                        .title.mb-4(data-aos="fade-up")
                             span.icon.icon_condor_box
-                        .subtitle.mb-4
+                        .subtitle.mb-4(data-aos="fade-up")
                             h3 ¡Sencillo, seguro, rápido y muy económico!
-                        .paragraf.mb-4
+                        .paragraf.mb-4(data-aos="fade-up")
                             p.txt_size--em2.cl--gray Comprar lo que siempre soñaste jamás fue tan fácil. En Condor Box te brindamos una experiencia personalizada para que disfrutes de las ofertas extraordinarias del comercio electrónico de Estados Unidos. Si no tienes tarjetas de crédito, nosotros compramos por ti.
         section.pd_top--x100.pd_bottom--x100
             .container
                 .row.d-flex.align-items-center
-                    .col.txt_center
+                    .col-12.col-sm-6.txt_center(data-aos="fade-right")
                         img(src="images/consumo/img_celluphone2.png")
-                    .col
-                        .title.title_line.title_line--gains.mb-4
+                    .col-12.col-sm-6(data-aos="fade-left")
+                        .title.title_line.title_line--gains.mb-4(data-aos="fade-left")
                             .txt_two.txt_size--em4.cl--darkgray #ConsumoInteligente
-                        .paragraf
+                        .paragraf(data-aos="fade-left")
                             h3 Ahorra hasta el 80% respecto al valor en Colombia de los productos que deseas.
         //Así de Fácil pasos
         section.pd_top--x100.pd_bottom--x100
             .container
                 .row
                     .col.txt_center.py-5
-                        .title.mb-4
+                        .title.mb-4(data-aos="fade-up")
                             .txt_two.txt_size--em5.cl--darkgray Así de fácil
                 .row
-                    .col.txt_center
+                    .col-12.col-sm-6.col-md-3.txt_center.mg_bottom--x50(data-aos="fade-left")
                         .title.mb-4
                             span.icon.icon_txt01
                         .subtitle.mb-2
-                            h2.txt_bold.txt_size--em2a.cl--gray Regístrate
+                            h2.txt_bold.txt_size--em2a.cl--blue Regístrate
                         .paragraf
                             p.txt_bold gratis y obtén tu dirección y casillero en los EEUU.
-                    .col.txt_center
+                    .col-12.col-sm-6.col-md-3.txt_center.mg_bottom--x50(data-aos="fade-left")
                         .title.mb-4
                             span.icon.icon_txt02
                         .subtitle.mb-2
                             h2.txt_bold.txt_size--em2a.cl--gray Compra
                         .paragraf
                             p.txt_bold en cualquier tienda online. Si no tienes tarjeta de crédito, nosotros compramos por ti.
-                    .col.txt_center
+                    .col-12.col-sm-6.col-md-3.txt_center.mg_bottom--x50(data-aos="fade-right")
                         .title.mb-4
                             span.icon.icon_txt03
                         .subtitle.mb-2
                             h2.txt_bold.txt_size--em2a.cl--gray Envía
                         .paragraf
                             p.txt_bold tus compras a tu casillero. Cuando lleguen te avisaremos.
-                    .col.txt_center
+                    .col-12.col-sm-6.col-md-3.txt_center.mg_bottom--x50(data-aos="fade-right")
                         .title.mb-4
                             span.icon.icon_txt04
                         .subtitle.mb-2
@@ -177,10 +170,10 @@ block content
             .container
                 .row
                     .col-12.col-md-8.mx-auto.txt_center.mb-5
-                        .title.mb-4
+                        .title.mb-4(data-aos="fade-up")
                             .txt_two.txt_size--em5.cl--darkgray Hemos diseñado el mejor Casillero Virtual de Colombia
                 .row
-                    .col-12.col-md-4.box_over
+                    .col-12.col-md-4.box_over(data-aos="fade-up", data-aos-duration="3000")
                         .box_locker.mx-auto.txt_center
                             span.icon.icon_key
                         .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
@@ -189,7 +182,7 @@ block content
                             .paragraf
                                 p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
                         button.btn_ghost
-                    .col-12.col-md-4.box_over
+                    .col-12.col-md-4.box_over(data-aos="fade-up", data-aos-duration="3000")
                         .box_locker.mx-auto.txt_center
                             span.icon.icon_unlimited
                         .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
@@ -198,7 +191,7 @@ block content
                             .paragraf
                                 p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
                         button.btn_ghost
-                    .col-12.col-md-4.box_over
+                    .col-12.col-md-4.box_over(data-aos="fade-up", data-aos-duration="3000")
                         .box_locker.mx-auto.txt_center
                             span.icon.icon_safe
                         .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
@@ -207,7 +200,7 @@ block content
                             .paragraf
                                 p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
                         button.btn_ghost
-                    .col-12.col-md-4.txt_center.box_over
+                    .col-12.col-md-4.txt_center.box_over(data-aos="fade-up", data-aos-duration="3000")
                         .box_locker.mx-auto.txt_center
                             span.icon.icon_fast
                         .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
@@ -216,7 +209,7 @@ block content
                             .paragraf
                                 p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
                         button.btn_ghost
-                    .col-12.col-md-4.box_over
+                    .col-12.col-md-4.box_over(data-aos="fade-up", data-aos-duration="3000")
                         .box_locker.mx-auto.txt_center
                             span.icon.icon_easy
                         .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
@@ -225,7 +218,7 @@ block content
                             .paragraf
                                 p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
                         button.btn_ghost
-                    .col-12.col-md-4.box_over
+                    .col-12.col-md-4.box_over(data-aos="fade-up", data-aos-duration="3000")
                         .box_locker.mx-auto.txt_center
                             span.icon.icon_personalized
                         .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
@@ -234,7 +227,7 @@ block content
                             .paragraf
                                 p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
                         button.btn_ghost
-                    .col-12.col-md-4.mx-auto.box_over
+                    .col-12.col-md-4.mx-auto.box_over(data-aos="fade-up", data-aos-duration="3000")
                         .box_locker.mx-auto.txt_center
                             span.icon.icon_economic
                         .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
@@ -249,14 +242,51 @@ block content
             .container
                 .row
                     .col.txt_center
-                        .title.mb-4
+                        .title.mb-4(data-aos="fade-left")
                             .txt_semibold.txt_two.txt_size--em4.cl--gray Cotiza tu envío
-                        .subtitle.mb-5
+                        .subtitle.mb-5(data-aos="fade-right")
                             p.txt_size--em2a.cl--gray y comprueba porque somos el casillero más económico
                 .row
                     //insert iframe
-                    .w-50.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x20
-                        | Iframe
+                    .w-50.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
+                        .form-group.mb-5
+                            .row
+                                .col-5.text-center.align-middle
+                                    span.d-block.pt-3 Peso en libras:
+                                .col
+                                    input#weight.form-control(type='number')
+                                .col-1
+                                    span *
+                        .form-group.mb-5
+                            .row
+                                .col-5.text-center.align-middle
+                                    span.d-block.pt-3 Valor Declarado:
+                                .col
+                                    input#declared.form-control(type='number' placeholder='USD')
+                                .col-1
+                                    span *
+                        .form-group.mb-5
+                            .row
+                                .col-5
+                                .col.text-left
+                                    small * <b>El valor mínimo declarado es de $30 USD</b>. Si el valor declarado es inferior al valor comercial de los productos, el envío podría estar sujeto a un reajuste de impuesto por parte de la DIAN. Esto es poco frecuente pero debes tenerlo presente.
+                                .col-1
+                        .form-group
+                            .row
+                                .col.mb-5
+                                    span Valor total:
+                                .col-7.mb-5.text-left
+                                    span.txt_size--em2.cl--darkgray#total $0
+                                    spna.txt_size--em2.cl--gains USD
+                            .row
+                                .col-12.mb-5
+                                    ul.list--inline
+                                        li.mr-5.align-middle
+                                            input.align-middle(type="checkbox")
+                                            span.h5.txt_bold.cl--gray.ml-2.align-middle No tengo tarjeta de crédito
+                                        li.ml-5
+                                            button#calculate.btn.btn_site_grad--blue.btn-sm.btn_full--lg Calcular
+
         //CalltoAction
         section.position-relative
             .box_bg--svg.izq
@@ -294,8 +324,8 @@ block content
 
             .container-fluid.box_vector--height
                 .row
-                    .col-12.col-md-1
-                    .col-12.col-md-4.align-self-start.box_pd--v1.cl--white
+                    .col-12.box_pd--cl
+                    .col-12.col-sm-7.col-lg-5.align-self-start.cl--white
                         .title.mb-4
                             .txt_two.txt_size--em4 ¿Ustedes son un <br> servicio de compras <br> como Amazon o Ebay?
                         .subtitle.mb-5
@@ -304,8 +334,8 @@ block content
                             a.btn.btn_site--white.cl--red.btn-sm.btn_radio.btn_full--lg(href='#')
                                 i.fa
                                 | Preguntas frecuentes
-                    .col-12.col-md-2
-                    .col-12.col-md-4.align-self-end.txt_right.box_pd--v2.cl--white
+                    .col-12.col-sm-12.col-lg-2.box_pd--cl
+                    .col-12.col-sm-12.col-lg-5.align-self-end.txt_right.cl--white
                         .title.mb-4
                             .txt_two.txt_size--em4
                                 | Escríbenos
@@ -317,8 +347,6 @@ block content
                             a.btn.btn_site--white.cl--blue.btn-sm.btn_radio.btn_full--lg(href='#')
                                 i.fa
                                 | Contáctanos
-                    .col-12.col-md-1
-
         //Descubre
         section.py-5
             .container
