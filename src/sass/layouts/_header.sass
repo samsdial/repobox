@@ -1,4 +1,8 @@
 // header
+.navbar
+    transition: $trs-site
+    &_onscroll
+        background-color: $white
 
 .navbar-expand-lg .navbar-collapse
     margin-top: 6px
@@ -9,6 +13,10 @@ ul.nav-access
         padding: 0 0.5rem
 a.nav-link
     font-size: 1.3rem
+    color: $white
+    font-weight: 600
+    +press
+        font-size: 1.35rem
 .navbar-nav
     .nav-item
         padding: 0px 5px
@@ -64,3 +72,35 @@ a.nav-link
             visibility: visible
             transform: translateX(0%)
             transition: transform 0.5s
+// scroll navabar
+.navbar_onscroll .container .navbar-collapse ul.navbar-nav li.nav-item,
+.navbar_onscroll .container-fluid .navbar-collapse ul.navbar-nav li.nav-item
+    a.nav-link
+        color: $gray
+.navbar_onscroll .container #navbarRaster ul.navbar-nav li.nav-item,
+.navbar_onscroll .container-fluid #navbarRaster ul.navbar-nav li.nav-item
+    a.btn-link
+        color: $gray
+        .circle--animation
+            background-color: $gray
+            &:after,
+            &:before
+                border: 1px solid $gray
+    a.btn_outline_white
+        color: $gray
+        border-color: $gray
+    a.btn_site--header
+        color: $white
+        background: rgba(18,197,225,1)
+        background: -moz-linear-gradient(left, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18,197,225,1)), color-stop(100%, rgba(42,131,221,1)))
+        background: -webkit-linear-gradient(left, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+        background: -o-linear-gradient(left, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+        background: -ms-linear-gradient(left, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+        background: linear-gradient(to right, rgba(18,197,225,1) 0%, rgba(42,131,221,1) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12c5e1', endColorstr='#2a83dd', GradientType=1 )
+#navbarRaster ul.navbar-nav li.nav-item
+    a.btn-link
+        +press
+            font-size: 1.45rem
+            color: $white

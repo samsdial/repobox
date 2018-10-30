@@ -40,10 +40,10 @@
     Created by SMARTINEZ on 25/10/2018.
     
     -->
-    <nav class="navbar navbar-expand-lg mb-4 pt-4 pb-4 top-bar navbar-static-top sps sps--abv fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg mb-4 pt-4 pb-4 top-bar navbar-static-top sps sps--abv fixed-top" id="header">
+      <div class="container-fluid">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand mx-auto" href="#"><span class="hidden">CondorBox</span>
-          <div class="logo_box"><span class="logo_cobox logo_cobox--white"></span></div></a>
+          <div class="logo_box"><span class="logo_cobox logo_cobox--white" id="logo"></span></div></a>
         <div class="collapse navbar-collapse" id="navbarCollapse1">
           <ul class="navbar-nav ml-2 txt_bold- text-center text-lg-left">
             <li class="nav-item active"><a class="nav-link" href="#">Cómo Funciona<span class="sr-only">(current)</span></a></li>
@@ -54,9 +54,9 @@
         </div>
         <div class="mx-auto" id="navbarRaster">
           <ul class="navbar-nav nav-access ml-auto nav-flex-icons">
-            <li class="nav-item"><a class="btn btn-link btn_full--lg" href="#"><span class="itt"></span>Rastrear Paqueta</a></li>
+            <li class="nav-item"><a class="btn btn-link btn_full--lg" href="#"><span class="circle--animation"></span>Rastrear Paqueta</a></li>
             <li class="nav-item"><a class="btn btn_outline_white btn-sm btn_full--lg" href="#"><i class="fa"></i>Iniciar sesión</a></li>
-            <li class="nav-item"><a class="btn btn-primary btn-sm btn_full--lg" href="#"><i class="fa"></i>Registrarse</a></li>
+            <li class="nav-item"><a class="btn btn_site--header btn-sm btn_full--lg" href="#"><i class="fa"></i>Registrarse</a></li>
           </ul>
         </div>
       </div>
@@ -75,51 +75,123 @@
       </div>
     </div>
     <div class="wrapper">
-      <section>
+      <section class="position-relative slider_overflow">
         <ul class="slider_intro">
-          <li class="slider_item bgc_grad_vertical pd_top--x50">
+          <li class="slider_item bgc_grad_vertical1 pd_top--x50">
             <div class="row align-items-center">
-              <div class="col txt_center">
-                <div class="icon_smartphone" style="background-image: url('https://place-hold.it/442');"></div>
+              <div class="col-12 col-sm-6 txt_center">
+                <div class="icon_smartphone" style="background-image: url('images/slider/img_cell--01.png');"></div>
               </div>
-              <div class="col cl--white">
+              <div class="col-12 col-sm-6 cl--white">
                 <div class="title mb-2">
-                  <h2 class="display-2 txt_bold">Ahorrar es simple</h2>
+                  <div class="txt_two display-2 txt_semisemibold">Ahorrar es simple</div>
                 </div>
                 <div class="intro mb-5">
-                  <p class="h4">Regístrate gratis y disfruta del mejor casillero virtual de Colombia.</p>
+                  <div class="txt_size--x3">Regístrate gratis y disfruta del mejor <br> casillero virtual de Colombia.</div>
                 </div>
                 <div class="action mb-2">
                   <ul class="list--inline list_two_item">
-                    <li><a class="btn btn_site--white cl--blue btn-sm btn_radio btn_full--lg" href="#"><i class="fa"></i>Obtén tu casillero gratis</a></li>
+                    <li><a class="btn btn_site--white btn--shadow cl--blue btn-sm btn_radio btn_full--lg" href="#"><i class="fa"></i>Obtén tu casillero gratis</a></li>
                     <li><a class="btn btn_outline_white btn-sm btn_radio btn_full--lg" href="#"><i class="fa"></i>Obtén tu casillero gratis</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </li>
-          <li class="slider_item bgc_grad_vertical pd_top--x50">
+          <li class="slider_item bgc_grad_vertical2 pd_top--x50">
             <div class="row align-items-center">
-              <div class="col txt_center">
-                <div class="icon_smartphone" style="background-image: url('https://place-hold.it/442');"></div>
+              <div class="col-12 col-sm-6 txt_center">
+                <div class="icon_smartphone" style="background-image: url('images/slider/img_cell--02.png');"></div>
               </div>
-              <div class="col cl--white">
-                <div class="title txt_bold">
-                  <h2 class="display-2">Ahorrar es simple</h2>
+              <div class="col-12 col-sm-6 cl--white">
+                <div class="title mb-2">
+                  <div class="txt_two display-2 txt_semisemibold">Black Friday!</div>
+                </div>
+                <div class="intro mb-5">
+                  <div class="txt_size--x3">
+                    Abre tu casillero en noviembre, compra en la mejor época del <br>
+                    año y<strong> participa por una Gift Card de Amazon por $200 USD</strong>
+                  </div>
+                </div>
+                <div class="action mb-2">
+                  <ul class="list--inline list_two_item">
+                    <li><a class="btn btn_site--white cl--violeta btn--shadow btn-sm btn_radio btn_full--lg" href="#"><i class="fa"></i>Ver las mejores ofertas</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider_item bgc_grad_vertical3 pd_top--x50">
+            <div class="row align-items-center">
+              <div class="col-12 col-sm-6 txt_center">
+                <div class="icon_smartphone" style="background-image: url('images/slider/img_cell--02.png');"></div>
+              </div>
+              <div class="col-12 col-sm-6 cl--white">
+                <div class="title mb-2">
+                  <div class="txt_two display-2 txt_semisemibold">¡Tarifa de locura!</div>
+                </div>
+                <div class="intro mb-5">
+                  <div class="txt_size--x3">Envía cualquier celular, tablet o portátil por <br> solo <b>$59 USD</b>, incluye impuestos y seguro.</div>
+                </div>
+                <div class="action mb-2">
+                  <ul class="list--inline list_two_item">
+                    <li><a class="btn btn_site--white cl--mora btn--shadow btn-sm btn_radio btn_full--lg" href="#"><i class="fa"></i>Saber más</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider_item bgc_grad_vertical4 pd_top--x50">
+            <div class="row align-items-center">
+              <div class="col-12 col-sm-6 txt_center">
+                <div class="icon_smartphone" style="background-image: url('images/slider/img_cell--02.png');"></div>
+              </div>
+              <div class="col-12 col-sm-6 cl--white">
+                <div class="title mb-2">
+                  <div class="txt_two display-2 txt_semisemibold">Casillero Corporativo</div>
+                </div>
+                <div class="intro mb-5">
+                  <div class="txt_size--x3">Creamos soluciones ajustadas a las necesidades de las empresas y sus colaboradores.</div>
+                </div>
+                <div class="action mb-2">
+                  <ul class="list--inline list_two_item">
+                    <li><a class="btn btn_site--white cl--green btn--shadow btn-sm btn_radio btn_full--lg" href="#"><i class="fa"></i>Contáctanos</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </li>
         </ul>
+        <div class="box_slider_nav">
+          <ul class="slider-nav list--inline">
+            <li class="item txt-center">
+              <div class="w-100"><span>uno</span></div>
+            </li>
+            <li class="item txt-center">
+              <div class="w-100"><span>dos</span></div>
+            </li>
+            <li class="item txt-center">
+              <div class="w-100"><span>tres</span></div>
+            </li>
+            <li class="item txt-center">
+              <div class="w-100"><span>cuatro</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="box_social--fixed">
+          <ul class="text-center">
+            <li class="nav-item"><a class="mx-auto" href="facebook" target="_blank"><span class="icon icon-social icon_facebook"></span></a></li>
+            <li class="nav-item my-2"><a class="mx-auto" href="twitter" target="_blank"><span class="icon icon-social icon_twitter"></span></a></li>
+            <li class="nav-item"><a class="mx-auto" href="instagram" target="_blank"><span class="icon icon-social icon_instagram"></span></a></li>
+          </ul>
+        </div>
       </section>
       <!--Condor Box-->
       <section class="py-5">
         <div class="container">
           <div class="row">
             <div class="col-8 mx-auto txt_center mg_top--x100">
-              <div class="title mb-4">
-                <h2 class="txt_size--em6 txt_bold">Condor box</h2>
-              </div>
+              <div class="title mb-4"><span class="icon icon_condor_box"></span></div>
               <div class="subtitle mb-4">
                 <h3>¡Sencillo, seguro, rápido y muy económico!</h3>
               </div>
@@ -130,23 +202,23 @@
           </div>
         </div>
       </section>
-      <section class="py-5">
+      <section class="pd_top--x100 pd_bottom--x100">
         <div class="container">
           <div class="row d-flex align-items-center">
-            <div class="col txt_center"><img src="https://place-hold.it/442"></div>
+            <div class="col txt_center"><img src="images/consumo/img_celluphone2.png"></div>
             <div class="col">
               <div class="title title_line title_line--gains mb-4">
                 <div class="txt_two txt_size--em4 cl--darkgray">#ConsumoInteligente</div>
               </div>
               <div class="paragraf">
-                <p class="txt_bold">Ahorra hasta el 80% respecto al valor en Colombia de los productos que deseas.</p>
+                <h3>Ahorra hasta el 80% respecto al valor en Colombia de los productos que deseas.</h3>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!--Así de Fácil pasos-->
-      <section>
+      <section class="pd_top--x100 pd_bottom--x100">
         <div class="container">
           <div class="row">
             <div class="col txt_center py-5">
@@ -157,44 +229,36 @@
           </div>
           <div class="row">
             <div class="col txt_center">
-              <div class="title mb-4">
-                <h2 class="display-2">01</h2>
-              </div>
+              <div class="title mb-4"><span class="icon icon_txt01"></span></div>
               <div class="subtitle mb-2">
-                <h4 class="txt_size--em3 cl--gray">Regístrate</h4>
+                <h2 class="txt_bold txt_size--em2a cl--gray">Regístrate</h2>
               </div>
               <div class="paragraf">
                 <p class="txt_bold">gratis y obtén tu dirección y casillero en los EEUU.</p>
               </div>
             </div>
             <div class="col txt_center">
-              <div class="title mb-4">
-                <h2 class="display-2">02</h2>
-              </div>
+              <div class="title mb-4"><span class="icon icon_txt02"></span></div>
               <div class="subtitle mb-2">
-                <h4 class="txt_size--em3 cl--gray">Compra</h4>
+                <h2 class="txt_bold txt_size--em2a cl--gray">Compra</h2>
               </div>
               <div class="paragraf">
                 <p class="txt_bold">en cualquier tienda online. Si no tienes tarjeta de crédito, nosotros compramos por ti.</p>
               </div>
             </div>
             <div class="col txt_center">
-              <div class="title mb-4">
-                <h2 class="display-2">03</h2>
-              </div>
+              <div class="title mb-4"><span class="icon icon_txt03"></span></div>
               <div class="subtitle mb-2">
-                <h4 class="txt_size--em3 cl--gray">Envía</h4>
+                <h2 class="txt_bold txt_size--em2a cl--gray">Envía</h2>
               </div>
               <div class="paragraf">
                 <p class="txt_bold">tus compras a tu casillero. Cuando lleguen te avisaremos.</p>
               </div>
             </div>
             <div class="col txt_center">
-              <div class="title mb-4">
-                <h2 class="display-2">04</h2>
-              </div>
+              <div class="title mb-4"><span class="icon icon_txt04"></span></div>
               <div class="subtitle mb-2">
-                <h4 class="txt_size--em3 cl--gray">Disfruta</h4>
+                <h2 class="txt_bold txt_size--em2a cl--gray">Disfruta</h2>
               </div>
               <div class="paragraf">
                 <p class="txt_bold">de tus compras generando la orden de envío a Colombia desde cualquier dispositivo a través de tu cuenta de casillero.</p>
@@ -204,7 +268,7 @@
         </div>
       </section>
       <!--Hemos diseñado el mejor-->
-      <section class="py-5">
+      <section class="pd_top--x100 pd_bottom--x100">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-8 mx-auto txt_center mb-5">
@@ -214,61 +278,89 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-4 txt_center"><span class="icon icon_key"></span>
-              <div class="title">
-                <h3>Gratis</h3>
+            <div class="col-12 col-md-4 box_over">
+              <div class="box_locker mx-auto txt_center"><span class="icon icon_key"></span></div>
+              <div class="box_locker--info w-100 pd_box--x20 bdb--lighblue bdb_box--x2 txt_center">
+                <div class="title mb-2 pd_top--x30">
+                  <h3>Gratis</h3>
+                </div>
+                <div class="paragraf">
+                  <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
+                </div>
               </div>
-              <div class="paragraf">
-                <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
-              </div>
+              <button class="btn_ghost"></button>
             </div>
-            <div class="col-12 col-md-4 txt_center"><span class="icon icon_unlimited"></span>
-              <div class="title">
-                <h3>Ilimitado</h3>
+            <div class="col-12 col-md-4 box_over">
+              <div class="box_locker mx-auto txt_center"><span class="icon icon_unlimited"></span></div>
+              <div class="box_locker--info w-100 pd_box--x20 bdb--lighblue bdb_box--x2 txt_center">
+                <div class="title mb-2 pd_top--x30">
+                  <h3>Ilimitado</h3>
+                </div>
+                <div class="paragraf">
+                  <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
+                </div>
               </div>
-              <div class="paragraf">
-                <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
-              </div>
+              <button class="btn_ghost"></button>
             </div>
-            <div class="col-12 col-md-4 txt_center"><span class="icon icon_safe"></span>
-              <div class="title">
-                <h3>Seguro</h3>
+            <div class="col-12 col-md-4 box_over">
+              <div class="box_locker mx-auto txt_center"><span class="icon icon_safe"></span></div>
+              <div class="box_locker--info w-100 pd_box--x20 bdb--lighblue bdb_box--x2 txt_center">
+                <div class="title mb-2 pd_top--x30">
+                  <h3>Seguro</h3>
+                </div>
+                <div class="paragraf">
+                  <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
+                </div>
               </div>
-              <div class="paragraf">
-                <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
-              </div>
+              <button class="btn_ghost"></button>
             </div>
-            <div class="col-12 col-md-4 txt_center"><span class="icon icon_fast"></span>
-              <div class="title">
-                <h3>Rápido</h3>
+            <div class="col-12 col-md-4 txt_center box_over">
+              <div class="box_locker mx-auto txt_center"><span class="icon icon_fast"></span></div>
+              <div class="box_locker--info w-100 pd_box--x20 bdb--lighblue bdb_box--x2 txt_center">
+                <div class="title mb-2 pd_top--x30">
+                  <h3>Rápido</h3>
+                </div>
+                <div class="paragraf">
+                  <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
+                </div>
               </div>
-              <div class="paragraf">
-                <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
-              </div>
+              <button class="btn_ghost"></button>
             </div>
-            <div class="col-12 col-md-4 txt_center"><span class="icon icon_easy"></span>
-              <div class="title">
-                <h3>Sencillo</h3>
+            <div class="col-12 col-md-4 box_over">
+              <div class="box_locker mx-auto txt_center"><span class="icon icon_easy"></span></div>
+              <div class="box_locker--info w-100 pd_box--x20 bdb--lighblue bdb_box--x2 txt_center">
+                <div class="title mb-2 pd_top--x30">
+                  <h3>Sencillo</h3>
+                </div>
+                <div class="paragraf">
+                  <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
+                </div>
               </div>
-              <div class="paragraf">
-                <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
-              </div>
+              <button class="btn_ghost"></button>
             </div>
-            <div class="col-12 col-md-4 txt_center"><span class="icon icon_personalized"></span>
-              <div class="title">
-                <h3>Personalizado</h3>
+            <div class="col-12 col-md-4 box_over">
+              <div class="box_locker mx-auto txt_center"><span class="icon icon_personalized"></span></div>
+              <div class="box_locker--info w-100 pd_box--x20 bdb--lighblue bdb_box--x2 txt_center">
+                <div class="title mb-2 pd_top--x30">
+                  <h3>Personalizado</h3>
+                </div>
+                <div class="paragraf">
+                  <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
+                </div>
               </div>
-              <div class="paragraf">
-                <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
-              </div>
+              <button class="btn_ghost"></button>
             </div>
-            <div class="col-12 col-md-4 mx-auto txt_center"><span class="icon icon_economic"></span>
-              <div class="title">
-                <h3>Económico</h3>
+            <div class="col-12 col-md-4 mx-auto box_over">
+              <div class="box_locker mx-auto txt_center"><span class="icon icon_economic"></span></div>
+              <div class="box_locker--info w-100 pd_box--x20 bdb--lighblue bdb_box--x2 txt_center">
+                <div class="title mb-2 pd_top--x30">
+                  <h3>Económico</h3>
+                </div>
+                <div class="paragraf">
+                  <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
+                </div>
               </div>
-              <div class="paragraf">
-                <p>Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.</p>
-              </div>
+              <button class="btn_ghost"></button>
             </div>
           </div>
         </div>
@@ -293,28 +385,77 @@
         </div>
       </section>
       <!--CalltoAction-->
-      <section>
-        <div class="container">
+      <section class="position-relative">
+        <div class="box_bg--svg izq">
+          <div class="triangle_red_izq">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 915.17 900.6">
+              <defs>
+                <style>
+                  .cls-1 {
+                      fill: url(#Degradado_sin_nombre_7);
+                  }
+                </style>
+                <lineargradient id="Degradado_sin_nombre_7" x1="285.13" y1="475.32" x2="559.13" y2="793.32" gradientunits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#ff5254"></stop>
+                  <stop offset="1" stop-color="#ff6d55"></stop>
+                </lineargradient>
+              </defs>
+              <title>triangle_red_izq</title>
+              <g id="Capa_2" data-name="Capa 2">
+                <g id="Contacto_y_Preguntas" data-name="Contacto y Preguntas">
+                  <polygon class="cls-1" id="triangle_red_izq" points="915.17 450.34 0 900.6 0 0 915.17 450.34 915.17 450.34 915.17 450.34"></polygon>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="box_bg--svg der">
+          <div class="triangle_blue_der">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 915.17 900.6">
+              <defs>
+                <style>
+                  .cls-2{
+                      fill: url(#linear-gradient);
+                  }
+                </style>
+                <lineargradient id="linear-gradient" x1="-2.88" y1="450.3" x2="926.42" y2="450.3" gradientunits="userSpaceOnUse">
+                  <stop offset="0.01" stop-color="#12c7e1"></stop>
+                  <stop offset="0.6" stop-color="#219cde"></stop>
+                  <stop offset="1" stop-color="#2a84dd"></stop>
+                </lineargradient>
+              </defs>
+              <title>triangle_blue_der</title>
+              <g id="Capa_2" data-name="Capa 2">
+                <g id="Contacto_y_Preguntas" data-name="Contacto y Preguntas">
+                  <polygon class="cls-2" id="triangle_blue_der" points="0 450.34 915.17 900.6 915.17 0 0 450.34 0 450.34 0 450.34"></polygon>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="container-fluid box_vector--height">
           <div class="row">
-            <div class="col-5 align-self-start">
+            <div class="col-12 col-md-1"></div>
+            <div class="col-12 col-md-4 align-self-start box_pd--v1 cl--white">
               <div class="title mb-4">
-                <div class="txt_two txt_size--em4 cl--gray">¿Ustedes son un <br> servicio de compras <br> como Amazon o Ebay?</div>
+                <div class="txt_two txt_size--em4">¿Ustedes son un <br> servicio de compras <br> como Amazon o Ebay?</div>
               </div>
               <div class="subtitle mb-5">
                 <p class="txt_size--em2a cl--gray">Es normal tener dudas. Responde aquí todas las preguntas que tienes.</p>
               </div>
               <div class="action mb-5"><a class="btn btn_site--white cl--red btn-sm btn_radio btn_full--lg" href="#"><i class="fa"></i>Preguntas frecuentes</a></div>
             </div>
-            <div class="col-2"></div>
-            <div class="col-5 align-self-end txt_right pd_top--x100">
+            <div class="col-12 col-md-2"></div>
+            <div class="col-12 col-md-4 align-self-end txt_right box_pd--v2 cl--white">
               <div class="title mb-4">
-                <div class="txt_two txt_size--em4 cl--gray">Escríbenos<br><span class="txt_bold">con confianza</span></div>
+                <div class="txt_two txt_size--em4">Escríbenos<br><span class="txt_bold">con confianza</span></div>
               </div>
               <div class="subtitle mb-5">
-                <p class="txt_size--em2a cl--gray">Te enviaremos toda la información que solicites y te brindaremos la mejor asesoria.</p>
+                <p class="txt_size--em2a">Te enviaremos toda la información que solicites y te brindaremos la mejor asesoria.</p>
               </div>
               <div class="action"><a class="btn btn_site--white cl--blue btn-sm btn_radio btn_full--lg" href="#"><i class="fa"></i>Contáctanos</a></div>
             </div>
+            <div class="col-12 col-md-1"></div>
           </div>
         </div>
       </section>
@@ -339,7 +480,7 @@
                 <div class="row">
                   <div class="col">
                     <div class="txt_center">
-                      <div class="icon_referido" style="background-image: url('https://place-hold.it/180');"></div>
+                      <div class="icon_referido" style="background-image: url('images/recomend/logo_amazon.png');"></div>
                     </div>
                   </div>
                 </div>
@@ -348,7 +489,7 @@
                 <div class="row">
                   <div class="col">
                     <div class="txt_center">
-                      <div class="icon_referido" style="background-image: url('https://place-hold.it/180');"></div>
+                      <div class="icon_referido" style="background-image: url('images/recomend/logo_bestbuy.png');"></div>
                     </div>
                   </div>
                 </div>
@@ -357,7 +498,7 @@
                 <div class="row">
                   <div class="col">
                     <div class="txt_center">
-                      <div class="icon_referido" style="background-image: url('https://place-hold.it/180');"></div>
+                      <div class="icon_referido" style="background-image: url('images/recomend/logo_ebay.png');"></div>
                     </div>
                   </div>
                 </div>
@@ -366,7 +507,7 @@
                 <div class="row">
                   <div class="col">
                     <div class="txt_center">
-                      <div class="icon_referido" style="background-image: url('https://place-hold.it/180');"></div>
+                      <div class="icon_referido" style="background-image: url('images/recomend/logo_target.png');"></div>
                     </div>
                   </div>
                 </div>
@@ -375,7 +516,7 @@
                 <div class="row">
                   <div class="col">
                     <div class="txt_center">
-                      <div class="icon_referido" style="background-image: url('https://place-hold.it/180');"></div>
+                      <div class="icon_referido" style="background-image: url('images/recomend/logo_walmart.png');"></div>
                     </div>
                   </div>
                 </div>
@@ -384,7 +525,7 @@
                 <div class="row">
                   <div class="col">
                     <div class="txt_center">
-                      <div class="icon_referido" style="background-image: url('https://place-hold.it/180');"></div>
+                      <div class="icon_referido" style="background-image: url('images/recomend/logo_amazon.png');"></div>
                     </div>
                   </div>
                 </div>
@@ -532,7 +673,7 @@
                   <div class="row">
                     <div class="w-50 mx-auto txt_center txt_two">
                       <div class="quote quote_medios txt_two txt_size--em2a cl--darkgray">“Comercio electrónico en Colombia ha crecido un 64% en los últimos tres años”</div>
-                      <div class="action mb-5"><a class="txt_bold" href="#">Leer articulo</a></div>
+                      <div class="action mb-5"><a class="txt_bold" href="#">Leer articulo.</a></div>
                       <div class="icon icon_medio icon_medio--semana"></div>
                     </div>
                   </div>

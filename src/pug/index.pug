@@ -17,57 +17,126 @@ block content
                 li
                     a(href="#") List Item 2
     .wrapper
-        section
+        section.position-relative.slider_overflow
             ul.slider_intro
-                li.slider_item.bgc_grad_vertical.pd_top--x50
+                li.slider_item.bgc_grad_vertical1.pd_top--x50
                     .row.align-items-center
-                        .col.txt_center
-                            .icon_smartphone(style="background-image: url('https://place-hold.it/442')")
-                        .col.cl--white
+                        .col-12.col-sm-6.txt_center
+                            .icon_smartphone(style="background-image: url('images/slider/img_cell--01.png')")
+                        .col-12.col-sm-6.cl--white
                             .title.mb-2
-                                h2.display-2.txt_bold Ahorrar es simple
+                                .txt_two.display-2.txt_semisemibold Ahorrar es simple
                             .intro.mb-5
-                                p.h4 Regístrate gratis y disfruta del mejor casillero virtual de Colombia.
+                                .txt_size--x3 Regístrate gratis y disfruta del mejor <br> casillero virtual de Colombia.
                             .action.mb-2
                                 ul.list--inline.list_two_item
                                     li
-                                        a.btn.btn_site--white.cl--blue.btn-sm.btn_radio.btn_full--lg(href='#')
+                                        a.btn.btn_site--white.btn--shadow.cl--blue.btn-sm.btn_radio.btn_full--lg(href='#')
                                             i.fa
                                             | Obtén tu casillero gratis
                                     li
                                         a.btn.btn_outline_white.btn-sm.btn_radio.btn_full--lg(href='#')
                                             i.fa
                                             | Obtén tu casillero gratis
-                li.slider_item.bgc_grad_vertical.pd_top--x50
+                li.slider_item.bgc_grad_vertical2.pd_top--x50
                     .row.align-items-center
-                        .col.txt_center
-                            .icon_smartphone(style="background-image: url('https://place-hold.it/442')")
-                        .col.cl--white
-                            .title.txt_bold
-                                h2.display-2 Ahorrar es simple
+                        .col-12.col-sm-6.txt_center
+                            .icon_smartphone(style="background-image: url('images/slider/img_cell--02.png')")
+                        .col-12.col-sm-6.cl--white
+                            .title.mb-2
+                                .txt_two.display-2.txt_semisemibold Black Friday!
+                            .intro.mb-5
+                                .txt_size--x3
+                                    | Abre tu casillero en noviembre, compra en la mejor época del <br>
+                                    | año y
+                                    strong  participa por una Gift Card de Amazon por $200 USD
+                            .action.mb-2
+                                ul.list--inline.list_two_item
+                                    li
+                                        a.btn.btn_site--white.cl--violeta.btn--shadow.btn-sm.btn_radio.btn_full--lg(href='#')
+                                            i.fa
+                                            | Ver las mejores ofertas
+                li.slider_item.bgc_grad_vertical3.pd_top--x50
+                    .row.align-items-center
+                        .col-12.col-sm-6.txt_center
+                            .icon_smartphone(style="background-image: url('images/slider/img_cell--02.png')")
+                        .col-12.col-sm-6.cl--white
+                            .title.mb-2
+                                .txt_two.display-2.txt_semisemibold ¡Tarifa de locura!
+                            .intro.mb-5
+                                .txt_size--x3
+                                    | Envía cualquier celular, tablet o portátil por <br> solo <b>$59 USD</b>, incluye impuestos y seguro.
+                            .action.mb-2
+                                ul.list--inline.list_two_item
+                                    li
+                                        a.btn.btn_site--white.cl--mora.btn--shadow.btn-sm.btn_radio.btn_full--lg(href='#')
+                                            i.fa
+                                            | Saber más
+                li.slider_item.bgc_grad_vertical4.pd_top--x50
+                    .row.align-items-center
+                        .col-12.col-sm-6.txt_center
+                            .icon_smartphone(style="background-image: url('images/slider/img_cell--02.png')")
+                        .col-12.col-sm-6.cl--white
+                            .title.mb-2
+                                .txt_two.display-2.txt_semisemibold Casillero Corporativo
+                            .intro.mb-5
+                                .txt_size--x3
+                                    | Creamos soluciones ajustadas a las necesidades de las empresas y sus colaboradores.
+                            .action.mb-2
+                                ul.list--inline.list_two_item
+                                    li
+                                        a.btn.btn_site--white.cl--green.btn--shadow.btn-sm.btn_radio.btn_full--lg(href='#')
+                                            i.fa
+                                            | Contáctanos
+
+            .box_slider_nav
+                ul.slider-nav.list--inline
+                    li.item.txt-center
+                        .w-100
+                            span uno
+                    li.item.txt-center
+                        .w-100
+                            span dos
+                    li.item.txt-center
+                        .w-100
+                            span tres
+                    li.item.txt-center
+                        .w-100
+                            span cuatro
+            .box_social--fixed
+                ul.text-center
+                    li.nav-item
+                        a.mx-auto(href='facebook', target="_blank")
+                            span.icon.icon-social.icon_facebook
+                    li.nav-item.my-2
+                        a.mx-auto(href='twitter', target="_blank")
+                            span.icon.icon-social.icon_twitter
+                    li.nav-item
+                        a.mx-auto(href='instagram', target="_blank")
+                            span.icon.icon-social.icon_instagram
         //Condor Box
         section.py-5
             .container
                 .row
                     .col-8.mx-auto.txt_center.mg_top--x100
                         .title.mb-4
-                            h2.txt_size--em6.txt_bold Condor box
+                            span.icon.icon_condor_box
                         .subtitle.mb-4
                             h3 ¡Sencillo, seguro, rápido y muy económico!
                         .paragraf.mb-4
                             p.txt_size--em2.cl--gray Comprar lo que siempre soñaste jamás fue tan fácil. En Condor Box te brindamos una experiencia personalizada para que disfrutes de las ofertas extraordinarias del comercio electrónico de Estados Unidos. Si no tienes tarjetas de crédito, nosotros compramos por ti.
-        section.py-5
+        section.pd_top--x100.pd_bottom--x100
             .container
                 .row.d-flex.align-items-center
                     .col.txt_center
-                        img(src="https://place-hold.it/442")
+                        img(src="images/consumo/img_celluphone2.png")
                     .col
                         .title.title_line.title_line--gains.mb-4
                             .txt_two.txt_size--em4.cl--darkgray #ConsumoInteligente
                         .paragraf
-                            p.txt_bold Ahorra hasta el 80% respecto al valor en Colombia de los productos que deseas.
+                            h3 Ahorra hasta el 80% respecto al valor en Colombia de los productos que deseas.
         //Así de Fácil pasos
-        section
+        section.pd_top--x100.pd_bottom--x100
             .container
                 .row
                     .col.txt_center.py-5
@@ -76,83 +145,104 @@ block content
                 .row
                     .col.txt_center
                         .title.mb-4
-                            h2.display-2 01
+                            span.icon.icon_txt01
                         .subtitle.mb-2
-                            h4.txt_size--em3.cl--gray Regístrate
+                            h2.txt_bold.txt_size--em2a.cl--gray Regístrate
                         .paragraf
                             p.txt_bold gratis y obtén tu dirección y casillero en los EEUU.
                     .col.txt_center
                         .title.mb-4
-                            h2.display-2 02
+                            span.icon.icon_txt02
                         .subtitle.mb-2
-                            h4.txt_size--em3.cl--gray Compra
+                            h2.txt_bold.txt_size--em2a.cl--gray Compra
                         .paragraf
                             p.txt_bold en cualquier tienda online. Si no tienes tarjeta de crédito, nosotros compramos por ti.
                     .col.txt_center
                         .title.mb-4
-                            h2.display-2 03
+                            span.icon.icon_txt03
                         .subtitle.mb-2
-                            h4.txt_size--em3.cl--gray Envía
+                            h2.txt_bold.txt_size--em2a.cl--gray Envía
                         .paragraf
                             p.txt_bold tus compras a tu casillero. Cuando lleguen te avisaremos.
                     .col.txt_center
                         .title.mb-4
-                            h2.display-2 04
+                            span.icon.icon_txt04
                         .subtitle.mb-2
-                            h4.txt_size--em3.cl--gray Disfruta
+                            h2.txt_bold.txt_size--em2a.cl--gray Disfruta
                         .paragraf
                             p.txt_bold de tus compras generando la orden de envío a Colombia desde cualquier dispositivo a través de tu cuenta de casillero.
 
         //Hemos diseñado el mejor
-        section.py-5
+        section.pd_top--x100.pd_bottom--x100
             .container
                 .row
                     .col-12.col-md-8.mx-auto.txt_center.mb-5
                         .title.mb-4
                             .txt_two.txt_size--em5.cl--darkgray Hemos diseñado el mejor Casillero Virtual de Colombia
                 .row
-                    .col-12.col-md-4.txt_center
-                        span.icon.icon_key
-                        .title
-                            h3 Gratis
-                        .paragraf
-                            p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
-                    .col-12.col-md-4.txt_center
-                        span.icon.icon_unlimited
-                        .title
-                            h3 Ilimitado
-                        .paragraf
-                            p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
-                    .col-12.col-md-4.txt_center
-                        span.icon.icon_safe
-                        .title
-                            h3 Seguro
-                        .paragraf
-                            p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
-                    .col-12.col-md-4.txt_center
-                        span.icon.icon_fast
-                        .title
-                            h3 Rápido
-                        .paragraf
-                            p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
-                    .col-12.col-md-4.txt_center
-                        span.icon.icon_easy
-                        .title
-                            h3 Sencillo
-                        .paragraf
-                            p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
-                    .col-12.col-md-4.txt_center
-                        span.icon.icon_personalized
-                        .title
-                            h3 Personalizado
-                        .paragraf
-                            p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
-                    .col-12.col-md-4.mx-auto.txt_center
-                        span.icon.icon_economic
-                        .title
-                            h3 Económico
-                        .paragraf
-                            p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
+                    .col-12.col-md-4.box_over
+                        .box_locker.mx-auto.txt_center
+                            span.icon.icon_key
+                        .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
+                            .title.mb-2.pd_top--x30
+                                h3 Gratis
+                            .paragraf
+                                p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
+                        button.btn_ghost
+                    .col-12.col-md-4.box_over
+                        .box_locker.mx-auto.txt_center
+                            span.icon.icon_unlimited
+                        .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
+                            .title.mb-2.pd_top--x30
+                                h3 Ilimitado
+                            .paragraf
+                                p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
+                        button.btn_ghost
+                    .col-12.col-md-4.box_over
+                        .box_locker.mx-auto.txt_center
+                            span.icon.icon_safe
+                        .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
+                            .title.mb-2.pd_top--x30
+                                h3 Seguro
+                            .paragraf
+                                p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
+                        button.btn_ghost
+                    .col-12.col-md-4.txt_center.box_over
+                        .box_locker.mx-auto.txt_center
+                            span.icon.icon_fast
+                        .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
+                            .title.mb-2.pd_top--x30
+                                h3 Rápido
+                            .paragraf
+                                p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
+                        button.btn_ghost
+                    .col-12.col-md-4.box_over
+                        .box_locker.mx-auto.txt_center
+                            span.icon.icon_easy
+                        .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
+                            .title.mb-2.pd_top--x30
+                                h3 Sencillo
+                            .paragraf
+                                p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
+                        button.btn_ghost
+                    .col-12.col-md-4.box_over
+                        .box_locker.mx-auto.txt_center
+                            span.icon.icon_personalized
+                        .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
+                            .title.mb-2.pd_top--x30
+                                h3 Personalizado
+                            .paragraf
+                                p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
+                        button.btn_ghost
+                    .col-12.col-md-4.mx-auto.box_over
+                        .box_locker.mx-auto.txt_center
+                            span.icon.icon_economic
+                        .box_locker--info.w-100.pd_box--x20.bdb--lighblue.bdb_box--x2.txt_center
+                            .title.mb-2.pd_top--x30
+                                h3 Económico
+                            .paragraf
+                                p Regístrate y tendrás tu propio espacio de almacenamiento en los Estados Unidos gratis y para siempre.
+                        button.btn_ghost
 
         //Cotizador
         section.py-5
@@ -168,31 +258,66 @@ block content
                     .w-50.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x20
                         | Iframe
         //CalltoAction
-        section
-            .container
+        section.position-relative
+            .box_bg--svg.izq
+                .triangle_red_izq
+                    svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 915.17 900.6')
+                        defs
+                            style.
+                                .cls-1 {
+                                    fill: url(#Degradado_sin_nombre_7);
+                                }
+                            lineargradient#Degradado_sin_nombre_7(x1='285.13' y1='475.32' x2='559.13' y2='793.32' gradientunits='userSpaceOnUse')
+                                stop(offset='0' stop-color='#ff5254')
+                                stop(offset='1' stop-color='#ff6d55')
+                        title triangle_red_izq
+                        g#Capa_2(data-name='Capa 2')
+                            g#Contacto_y_Preguntas(data-name='Contacto y Preguntas')
+                                polygon#triangle_red_izq.cls-1(points='915.17 450.34 0 900.6 0 0 915.17 450.34 915.17 450.34 915.17 450.34')
+
+            .box_bg--svg.der
+                .triangle_blue_der
+                    svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 915.17 900.6')
+                        defs
+                            style.
+                                .cls-2{
+                                    fill: url(#linear-gradient);
+                                }
+                            lineargradient#linear-gradient(x1='-2.88' y1='450.3' x2='926.42' y2='450.3' gradientunits='userSpaceOnUse')
+                                stop(offset='0.01' stop-color='#12c7e1')
+                                stop(offset='0.6' stop-color='#219cde')
+                                stop(offset='1' stop-color='#2a84dd')
+                        title triangle_blue_der
+                        g#Capa_2(data-name='Capa 2')
+                            g#Contacto_y_Preguntas(data-name='Contacto y Preguntas')
+                                polygon#triangle_blue_der.cls-2(points='0 450.34 915.17 900.6 915.17 0 0 450.34 0 450.34 0 450.34')
+
+            .container-fluid.box_vector--height
                 .row
-                    .col-5.align-self-start
+                    .col-12.col-md-1
+                    .col-12.col-md-4.align-self-start.box_pd--v1.cl--white
                         .title.mb-4
-                            .txt_two.txt_size--em4.cl--gray ¿Ustedes son un <br> servicio de compras <br> como Amazon o Ebay?
+                            .txt_two.txt_size--em4 ¿Ustedes son un <br> servicio de compras <br> como Amazon o Ebay?
                         .subtitle.mb-5
                             p.txt_size--em2a.cl--gray Es normal tener dudas. Responde aquí todas las preguntas que tienes.
                         .action.mb-5
                             a.btn.btn_site--white.cl--red.btn-sm.btn_radio.btn_full--lg(href='#')
                                 i.fa
                                 | Preguntas frecuentes
-                    .col-2
-                    .col-5.align-self-end.txt_right.pd_top--x100
+                    .col-12.col-md-2
+                    .col-12.col-md-4.align-self-end.txt_right.box_pd--v2.cl--white
                         .title.mb-4
-                            .txt_two.txt_size--em4.cl--gray
+                            .txt_two.txt_size--em4
                                 | Escríbenos
                                 br
                                 span.txt_bold con confianza
                         .subtitle.mb-5
-                            p.txt_size--em2a.cl--gray Te enviaremos toda la información que solicites y te brindaremos la mejor asesoria.
+                            p.txt_size--em2a Te enviaremos toda la información que solicites y te brindaremos la mejor asesoria.
                         .action
                             a.btn.btn_site--white.cl--blue.btn-sm.btn_radio.btn_full--lg(href='#')
                                 i.fa
                                 | Contáctanos
+                    .col-12.col-md-1
 
         //Descubre
         section.py-5
@@ -210,32 +335,32 @@ block content
                             .row
                                 .col
                                     .txt_center
-                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                                        .icon_referido(style="background-image: url('images/recomend/logo_amazon.png')")
                         li.slider_item
                             .row
                                 .col
                                     .txt_center
-                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                                        .icon_referido(style="background-image: url('images/recomend/logo_bestbuy.png')")
                         li.slider_item
                             .row
                                 .col
                                     .txt_center
-                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                                        .icon_referido(style="background-image: url('images/recomend/logo_ebay.png')")
                         li.slider_item
                             .row
                                 .col
                                     .txt_center
-                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                                        .icon_referido(style="background-image: url('images/recomend/logo_target.png')")
                         li.slider_item
                             .row
                                 .col
                                     .txt_center
-                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                                        .icon_referido(style="background-image: url('images/recomend/logo_walmart.png')")
                         li.slider_item
                             .row
                                 .col
                                     .txt_center
-                                        .icon_referido(style="background-image: url('https://place-hold.it/180')")
+                                        .icon_referido(style="background-image: url('images/recomend/logo_amazon.png')")
 
         //Que Dicen
         section
@@ -337,6 +462,6 @@ block content
                                         .quote.quote_medios.txt_two.txt_size--em2a.cl--darkgray
                                             | “Comercio electrónico en Colombia ha crecido un 64% en los últimos tres años”
                                         .action.mb-5
-                                            a.txt_bold(href="#") Leer articulo
+                                            a.txt_bold(href="#") Leer articulo.
                                         .icon.icon_medio.icon_medio--semana
     include _footer.pug

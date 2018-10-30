@@ -29,15 +29,22 @@ $(document).ready(function($){
         $('#collapseOne').removeClass('in');
     });*/
     $('.slider_intro').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
         //autoplay: true,
         //autoplaySpeed: 2000,
-        fade: true,
-        cssEase: 'linear'
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider_intro',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: false
     });
     $('.slider_recommend').slick({
         slidesToShow: 5,
@@ -57,6 +64,26 @@ $(document).ready(function($){
         slidesToScroll: 1,
         //autoplay: true,
         //eautoplaySpeed: 2000,
+    });
+    $(document).on("scroll", function(){
+        if
+        ($(document).scrollTop() > 600){
+            $("#header").addClass("navbar_onscroll");
+        }
+        else
+        {
+            $("#header").removeClass("navbar_onscroll");
+        }
+    });
+    $(document).on("scroll", function(){
+        if
+        ($(document).scrollTop() > 600){
+            $("#logo").addClass("logo_cobox--color");
+        }
+        else
+        {
+            $("#logo").removeClass("logo_cobox--color");
+        }
     });
 });
 

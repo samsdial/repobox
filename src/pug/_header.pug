@@ -1,14 +1,14 @@
 //
    Created by SMARTINEZ on 25/10/2018.
 
-nav.navbar.navbar-expand-lg.mb-4.pt-4.pb-4.top-bar.navbar-static-top.sps.sps--abv.fixed-top
-  .container
+nav#header.navbar.navbar-expand-lg.mb-4.pt-4.pb-4.top-bar.navbar-static-top.sps.sps--abv.fixed-top
+  .container-fluid
     button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarCollapse1' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
     a.navbar-brand.mx-auto(href='#')
       span.hidden CondorBox
       .logo_box
-        span.logo_cobox.logo_cobox--white
+        span#logo.logo_cobox.logo_cobox--white
     #navbarCollapse1.collapse.navbar-collapse
       ul.navbar-nav.ml-2.txt_bold-.text-center.text-lg-left
         li.nav-item.active
@@ -25,13 +25,13 @@ nav.navbar.navbar-expand-lg.mb-4.pt-4.pb-4.top-bar.navbar-static-top.sps.sps--ab
       ul.navbar-nav.nav-access.ml-auto.nav-flex-icons
         li.nav-item
           a.btn.btn-link.btn_full--lg(href='#')
-            span.itt
+            span.circle--animation
             | Rastrear Paqueta
         li.nav-item
           a.btn.btn_outline_white.btn-sm.btn_full--lg(href='#')
             i.fa
             | Iniciar sesión
         li.nav-item
-          a.btn.btn-primary.btn-sm.btn_full--lg(href='#')
+          a.btn.btn_site--header.btn-sm.btn_full--lg(href='#')
             i.fa
             | Registrarse
