@@ -129,7 +129,7 @@ block content
                         .paragraf(data-aos="fade-left")
                             h3 Ahorra hasta el 80% respecto al valor en Colombia de los productos que deseas.
         //Así de Fácil pasos
-        section.pd_top--x100.pd_bottom--x100
+        section#how.pd_top--x100.pd_bottom--x100
             .container
                 .row
                     .col.txt_center.py-5
@@ -238,7 +238,7 @@ block content
                         button.btn_ghost
 
         //Cotizador
-        section.py-5
+        section#quote.py-5
             .container
                 .row
                     .col.txt_center
@@ -248,7 +248,7 @@ block content
                             p.txt_size--em2a.cl--gray y comprueba porque somos el casillero más económico
                 .row
                     //insert iframe
-                    .w-50.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
+                    .col-12.col-sm-7.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
                         .form-group.mb-5
                             .row
                                 .col-5.text-center.align-middle
@@ -285,7 +285,7 @@ block content
                                             input.align-middle(type="checkbox")
                                             span.h5.txt_bold.cl--gray.ml-2.align-middle No tengo tarjeta de crédito
                                         li.ml-5
-                                            button#calculate.btn.btn_site_grad--blue.btn-sm.btn_full--lg Calcular
+                                            button#calculate.btn.btn_site_grad--blue.btn--shadow.cl--white.btn-sm.btn_radio.btn_full--lg Calcular
 
         //CalltoAction
         section.position-relative
@@ -325,7 +325,7 @@ block content
             .container-fluid.box_vector--height
                 .row
                     .col-12.box_pd--cl
-                    .col-12.col-sm-7.col-lg-5.align-self-start.cl--white
+                    .col-12.col-sm-7.col-lg-5.align-self-start.cl--white(data-aos="fade-left")
                         .title.mb-4
                             .txt_two.txt_size--em4 ¿Ustedes son un <br> servicio de compras <br> como Amazon o Ebay?
                         .subtitle.mb-5
@@ -335,7 +335,7 @@ block content
                                 i.fa
                                 | Preguntas frecuentes
                     .col-12.col-sm-12.col-lg-2.box_pd--cl
-                    .col-12.col-sm-12.col-lg-5.align-self-end.txt_right.cl--white
+                    .col-12.col-sm-12.col-lg-5.align-self-end.txt_right.cl--white(data-aos="fade-right")
                         .title.mb-4
                             .txt_two.txt_size--em4
                                 | Escríbenos
@@ -351,42 +351,42 @@ block content
         section.py-5
             .container
                 .row
-                    .col.txt_center.mg_bottom--x40
+                    .col.txt_center.mg_bottom--x40(data-aos="fade-up")
                         .title.mb-3
                             .txt_two.txt_size--em4.cl--darkgray Descubre miles de productos <br> en oferta
                         .paragraf.mb-5
                             .h3.cl--gray Estas son algunas páginas recomendadas
             .full-container
-                .w-75.mx-auto.py-5
+                .col-12.col-sm-9.mx-auto.py-5
                     ul.slider_recommend
                         li.slider_item
                             .row
-                                .col
+                                .col(data-aos="fade-up")
                                     .txt_center
                                         .icon_referido(style="background-image: url('images/recomend/logo_amazon.png')")
                         li.slider_item
                             .row
-                                .col
+                                .col(data-aos="fade-down")
                                     .txt_center
                                         .icon_referido(style="background-image: url('images/recomend/logo_bestbuy.png')")
                         li.slider_item
                             .row
-                                .col
+                                .col(data-aos="fade-up")
                                     .txt_center
                                         .icon_referido(style="background-image: url('images/recomend/logo_ebay.png')")
                         li.slider_item
                             .row
-                                .col
+                                .col(data-aos="fade-down")
                                     .txt_center
                                         .icon_referido(style="background-image: url('images/recomend/logo_target.png')")
                         li.slider_item
                             .row
-                                .col
+                                .col(data-aos="fade-up")
                                     .txt_center
                                         .icon_referido(style="background-image: url('images/recomend/logo_walmart.png')")
                         li.slider_item
                             .row
-                                .col
+                                .col(data-aos="fade-down")
                                     .txt_center
                                         .icon_referido(style="background-image: url('images/recomend/logo_amazon.png')")
 
@@ -394,7 +394,7 @@ block content
         section
             .container.py-5
                 .row
-                    .w-50.mx-auto.txt_center
+                    .col-12.col-sm-6.mx-auto.txt_center(data-aos="fade-up")
                         .title.mb-5
                             .txt_two.txt_size--em4.cl--darkgray Esto dicen sobre Condor Box
                         .icon.icon_quote.mb-5
@@ -402,10 +402,10 @@ block content
                             h3 Nuestros usuarios
             .full_container
                 //slider people
-                .w-75.mx-auto
+                .col-12.col-sm-10.mx-auto
                     ul.slider_quote_people
                         .li
-                            .col
+                            .col(data-aos="zoom-in-up")
                                 .txt_center
                                     .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
                                 .bgc--white.txt_center.pd_box--x20
@@ -417,7 +417,7 @@ block content
                                         .star-rating
                                             span.rating_size--50
                         .li
-                            .col
+                            .col(data-aos="zoom-in-up")
                                 .txt_center
                                     .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
                                 .bgc--white.txt_center.pd_box--x20
@@ -429,7 +429,7 @@ block content
                                         .star-rating
                                             span.rating_size--50
                         .li
-                            .col
+                            .col(data-aos="zoom-in-up")
                                 .txt_center
                                     .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
                                 .bgc--white.txt_center.pd_box--x20
@@ -441,7 +441,7 @@ block content
                                         .star-rating
                                             span.rating_size--50
                         .li
-                            .col
+                            .col(data-aos="zoom-in-up")
                                 .txt_center
                                     .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
                                 .bgc--white.txt_center.pd_box--x20
@@ -453,7 +453,7 @@ block content
                                         .star-rating
                                             span.rating_size--50
                         .li
-                            .col
+                            .col(data-aos="zoom-in-up")
                                 .txt_center
                                     .icon_people(style="background-image: url('images/people/img_andrea.jpg')")
                                 .bgc--white.txt_center.pd_box--x20
@@ -468,7 +468,7 @@ block content
             .container.py-5
                 // title medios
                 .row
-                    .col.txt_center
+                    .col.txt_center(data-aos="fade-up")
                         .icon.icon_quote.mb-5
                         .subtitle.subtitle_line.cl--darkgray
                             h3 Medios de comunicación
@@ -478,7 +478,7 @@ block content
                         ul.slider_quote_medios.py-5
                             .li
                                 .row
-                                    .w-50.mx-auto.txt_center
+                                    .w-50.mx-auto.txt_center(data-aos="fade-up", data-aos-anchor-placement="top-bottom")
                                         .quote.quote_medios.txt_two.txt_size--em2a.cl--darkgray
                                             | “Comercio electrónico en Colombia ha crecido un 64% en los últimos tres años”
                                         .action.mb-5
@@ -486,7 +486,7 @@ block content
                                         .icon.icon_medio.icon_medio--semana
                             .lis
                                 .row
-                                    .w-50.mx-auto.txt_center.txt_two
+                                    .w-50.mx-auto.txt_center.txt_two(data-aos="fade-up", data-aos-anchor-placement="top-bottom")
                                         .quote.quote_medios.txt_two.txt_size--em2a.cl--darkgray
                                             | “Comercio electrónico en Colombia ha crecido un 64% en los últimos tres años”
                                         .action.mb-5

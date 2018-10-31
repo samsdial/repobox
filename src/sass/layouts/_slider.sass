@@ -72,10 +72,39 @@
 
     .slick-dots li.slick-active button:before
       color: white
-    //li.item
-      width: 100px !important
-      height: 24px
-    //li.item:before
-      content: "hola"
-      color: $white
-      display: inline-block
+.slick-prev
+  $wprev: 40px
+  width: $wprev
+  height: $wprev
+  top: 25%
+  &:before
+    content: ""
+    width: $wprev
+    height: $wprev
+    display: inline-block
+    background-image: url('#{$gitPath}theme/icon_prev.svg')
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: center center
+    text-align: right
+    vertical-align: middle
+    transition: $trs-site
+.slick-next
+  $wprev2: 40px
+  width: $wprev2
+  height: $wprev2
+  top: 25%
+  &:before
+    content: ""
+    width: $wprev2
+    height: $wprev2
+    display: inline-block
+    background-image: url('#{$gitPath}theme/icon_next.svg')
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    background-position: center center
+    text-align: right
+    vertical-align: middle
+    transition: $trs-site

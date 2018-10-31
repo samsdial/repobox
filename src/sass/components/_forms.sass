@@ -2,18 +2,25 @@
 
 fieldset
     border: none
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus
-    border: none
-    -webkit-text-fill-color: $blue
-    -webkit-box-shadow: 0 0 0px 1000px $white inset
-    transition: background-color 5000s ease-in-out 0s
+textarea,
+input
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus
+        border: 2px solid $blueBox
+        -webkit-text-fill-color: $blueBox
+        -webkit-box-shadow: 0 0 0px 1000px $white inset
+        transition: background-color 5000s ease-in-out 0s
+textarea,
 input
     &.form-control
-        border-radius: 25px
-        padding: 1.7rem 1.2rem
+        border-radius: 6px
+        padding: 2rem 2rem
+        color: $gray
+        font-size: 12px
+        &::placeholder
+            color: $lightGray
+            font-size: 12px
 .newslatter
     position: relative
     .register.error
@@ -30,19 +37,20 @@ input
         position: relative
         width: 100%
         display: block
+textarea,
 input
     &.name
         & + .error.i
                 &:before
-                    content: "Escriba el nombre."
-    &.lastname
+                    content: "Nombre completo / Compañia*."
+    &.message
         & + .error.i
             &:before
-                content: "Escriba el apellido."
+                content: "Escriba el mensage de contacto."
     &.email
         & + .error.i
             &:before
-                content: "Escriba el Email o Un Email Valido: info@yamaki.com.co"
+                content: "Escriba el Email o Un Email Valido: info@condorbox.com"
 
     &.cel
         & + .error.i
@@ -61,9 +69,9 @@ input
     &+.error.i
         &:before
             font-size: 10px
-            color: red
+            color: $redBox
             display: inline-block
-            text-align: right
+            text-align: left
             padding-left: 1.3rem
 .apply.i
     text-align: center

@@ -1,5 +1,8 @@
 // box
 .box
+    &_faq
+        position: relative
+        top: -55px
     &_vector--height
         $hgcontrol: 100vh
         height: $hgcontrol
@@ -71,6 +74,7 @@
     &_bg--svg
         overflow: hidden
         position: absolute
+        z-index: -1
         &.izq,
         &.der
             width: 182%
@@ -150,3 +154,17 @@
             border-top-right-radius: 26px
             padding: 1.8rem 1.8rem
             width: 100%
+.card-body
+    width: 80%
+    padding: 35px
+.bgi_contact
+    width: 300vh
+    z-index: 0
+    .box_bg--svg.izq
+        top: -30%
+        width: 100%
+        z-index: -1
+    .box_bg--svg.der
+        top: -11%
+        width: 65%
+        z-index: -2

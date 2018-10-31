@@ -3,20 +3,16 @@ extends ./base/layout.pug
 block content
     include _header_static.pug
     .wrapper
-        section.pd_top--x100.pd_bottom--x100
+        section.pd_top--x100.pd_bottom--x100.bgc_grad_lineal--blue
             .container
-                .w-50.mx-auto
-                    ul.list--inline
-                        li.txt_center.py-5
-                            .title.mb-4(data-aos="fade-up")
-                                .icon.icon_rastreo-pin
-                        li.txt_left.py-5
-                            .title.mb-4(data-aos="fade-up")
-                                .icon.icon_rastreo
-                .w-75.mx-auto
+                .w-75.d-block.mx-auto.txt_center.cl--white.pd_top--x100.pd_bottom--x100
                     .title
-                        h2 Ingresa el número de tu guía para saber el estado de entrega de tu paquete
-            .container.pd_bottom--x100.pd_top--x100
-                .w-50.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
-                    | iframe
+                        .txt_bold.txt_size--em5 ¡Te damos la bienvenida!
+                    .subtitle
+                        h3 Estás a unos segundos de disfrutar del mejor casillero virtual de Colombia. Regístrate gratis y comienza a ahorrar, así de simple.
+        section.pd_top--x50.pd_bottom--x50
+            .container
+                .row
+                    .col-12.col-sm-9.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50(data-aos="flip-left", data-aos-duration="3000")
+                        | iframe
     include _footer.pug
