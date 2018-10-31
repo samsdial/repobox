@@ -1,0 +1,100 @@
+extends ./base/layout.pug
+
+block content
+    include _header.pug
+    .wrapper
+        section.bgi_contact
+            .box_bg--svg.izq
+                .triangle_red_izq
+                    svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 915.17 900.6')
+                        defs
+                            style.
+                                .cls-1 {
+                                    fill: url(#Degradado_sin_nombre_7);
+                                }
+                            lineargradient#Degradado_sin_nombre_7(x1='285.13' y1='475.32' x2='559.13' y2='793.32' gradientunits='userSpaceOnUse')
+                                stop(offset='0' stop-color='#ff5254')
+                                stop(offset='1' stop-color='#ff6d55')
+                        title triangle_red_izq
+                        g#Capa_2(data-name='Capa 2')
+                            g#Contacto_y_Preguntas(data-name='Contacto y Preguntas')
+                                polygon#triangle_red_izq.cls-1(points='915.17 450.34 0 900.6 0 0 915.17 450.34 915.17 450.34 915.17 450.34')
+
+            .box_bg--svg.der
+                .triangle_blue_der
+                    svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 915.17 900.6')
+                        defs
+                            style.
+                                .cls-2 {
+                                    fill: url(#linear-gradient);
+                                }
+                            lineargradient#linear-gradient(x1='-2.88' y1='450.3' x2='926.42' y2='450.3' gradientunits='userSpaceOnUse')
+                                stop(offset='0.01' stop-color='#12c7e1')
+                                stop(offset='0.6' stop-color='#219cde')
+                                stop(offset='1' stop-color='#2a84dd')
+                        title triangle_blue_der
+                        g#Capa_2(data-name='Capa 2')
+                            g#Contacto_y_Preguntas(data-name='Contacto y Preguntas')
+                                polygon#triangle_blue_der.cls-2(points='0 450.34 915.17 900.6 915.17 0 0 450.34 0 450.34 0 450.34')
+        section.pd_top--x100.pd_bottom--x100
+            .container.pd_bottom--x100.pd_top--x100
+                .col-12.col-sm-7.mx-auto.bgc--white.box_shadow.txt_center.pd_box--x50
+                    .txt_center(data-aos="fade-up")
+                        .title.mb-4
+                            .txt_two.txt_size--em4.txt_semibold.cl--gray Contacto
+                        .subtitle.mb-5
+                            h4 Te responderemos en menos de 24 horas
+                        form.form-horizontal
+                            .form-group
+                                .row
+                                    .col-12.mb-5
+                                        input#name.form-control.name(type="text", placeholder="Nombre")
+                                        .error
+                                    .col-12.mb-5
+                                        input#email.form-control.email(type="text", placeholder="Correo Electrónico")
+                                        .error
+                                .row
+                                    .col.mb-5
+                                        input#phone.form-control.cel(type="text", placeholder="Celular")
+                                        .error
+                                    .col.mb-5
+                                        input#city.form-control.city(type="text", placeholder="Ciudad")
+                                        .error
+                                .row
+                                    .col-12.mb-5
+                                        textarea#message.form-control.message(placeholder="Mensaje", rows="4", cols="50")
+                                        .error
+                            .form-group
+                                .col
+                                    button#submit.btn.btn_site_grad--blue.btn--shadow.cl--white.btn-sm.btn_radio.btn_full--lg Enviar
+                                    .alerta
+                                        p
+            section.pd_top--x25.pd_bottom--x100
+                .col-12.col-sm-7.mx-auto.pd_top--x50.pd_bottom--x100
+                    .txt_center.mb-5(data-aos="zoom-in", data-aos-duration="3000")
+                        .icon.icon_contacto
+                    .txt_center(data-aos="fade-up")
+                        .subtitle.mb-5
+                            .txt_size--em3.cl--gray.mb-2 También puedes escribirnos al
+                            h4.cl--gray +1 305 333 0477
+                        .action
+                            a.btn.btn_site_grad--blue.btn--shadow.cl--white.btn-sm.btn_radio.btn_full--lg(href="/contacto.html") Contacto
+                .container
+                    .row
+                        .col.txt_center
+                            .title.mb-5
+                                h4.cl--gray Oficina en MIAMI
+                            .subtitle
+                                p 8086 NW 74th Ave.|Miami, FL 33166
+                                p Ph: 305-887-4232 | Fax: 305-887-4236
+                            .info
+                                | iframe
+                        .col.txt_center
+                            .title.mb-5
+                                h4.cl--gray Oficina en BOGOTÁ
+                            .subtitle
+                                p Calle  22D  #127-84 Bodega 8
+                                p Centro Empresarial El Dorado | Tel: (1) 489-9113
+                            .info
+                                | iframe
+    include _footer.pug
