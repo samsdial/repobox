@@ -50,3 +50,39 @@
             text-align: center
             +MQ(M)
                 display: table-cell
+ul.list_newcontact
+    display: block
+    width: 100%
+    +MQ(S)
+        padding: 0
+    +MQ(L)
+        display: flex
+        flex-direction: row
+        //padding: 0px 150px
+        align-items: center
+        justify-items: center
+    +MQ(XL)
+        padding: 0px 150px
+    li
+        display: inline-block
+        vertical-align: top
+        width: 100%
+        +MQ(L)
+            flex-grow: 1
+
+        &:first-child
+            text-align: left
+            align-self: flex-start
+            +MQ(S)
+                margin-left: 30px
+                margin-bottom: 30px
+            +MQ(L)
+                margin-left: 60px
+                margin-bottom: 60px
+        &:last-child
+            text-align: right
+            align-self: flex-end
+            +MQ(S)
+                margin-right: 30px
+            +MQ(L)
+                margin-right: 60px

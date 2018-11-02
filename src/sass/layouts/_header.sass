@@ -1,9 +1,10 @@
 // header
 .navbar
+    background-color: transparent
     transition: $trs-site
     &_onscroll
         background-color: $white
-        box-shadow: 0px 5px 31px 0px rgba($black, 0.3)
+        box-shadow: 0px 2px 4px 0px rgba($black, 0.3)
 
 .navbar-expand-lg .navbar-collapse
     margin-top: 6px
@@ -12,12 +13,20 @@
 ul.nav-access
     li
         padding: 0 0.5rem
+        &.nav-item
+            a.btn
+                transition: none
+
+
 a.nav-link
     font-size: 1.3rem
     color: $white
     font-weight: 600
+    transition: none
     +press
         font-size: 1.35rem
+
+
 .navbar-nav
     .nav-item
         padding: 0px 5px

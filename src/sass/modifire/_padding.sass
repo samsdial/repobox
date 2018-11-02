@@ -11,7 +11,12 @@ $footer-pd: 20px
             &20
                 padding: $base-pd-spacing*2
             &50
-                padding: $base-pd-spacing*5
+                padding: $base-pd-spacing*3
+                &i
+                    +MQ(S)
+                        padding-top: $base-pd-spacing * 2.5
+                    +MQ(M)
+                        padding-top: $base-pd-spacing * 5
     &_y
         &--sz
             &100

@@ -51,6 +51,8 @@
         text-transform: uppercase
     &_capital
         text-transform: capitalize
+    &_left
+        text-align: left
     &_right
         text-align: right
     &_shadow
@@ -140,6 +142,9 @@
             +heading
                 +font-size(7)
                 line-height: 1.1
+        &--movil
+            +MQMAX(S)
+                font-size: 200% !important
     &_completed
         text-decoration: line-through
         font-style: italic

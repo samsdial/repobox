@@ -15,7 +15,7 @@ textarea,
 input
     &.form-control
         border-radius: 6px
-        padding: 2rem 2rem
+        padding: 1.3rem 2rem
         color: $gray
         font-size: 12px
         &::placeholder
@@ -37,12 +37,51 @@ input
         position: relative
         width: 100%
         display: block
+
+.error
+    &.i:before
+        height: 0
+        transition: $trs-site
+    &.i:before
+        min-height: 15px
+        max-height: 50px
+        transition: $trs-site
+.alerta.i,
+.alerta.a
+    &:before
+        font-size: 10px
+        color: $redBox
+        display: inline-block
+        text-align: left
+        padding-left: 1.3rem
+        font-weight: 700
+        margin-bottom: 15px
+
+.realvalue
+    & + .alerta.i
+        &:before
+            content: "Los valores deben ser superiores a 0*"
+
+
+.diligence
+    & + .alerta.a
+        &:before
+            content: "Diligenciar los campos."
 textarea,
 input
+
+    &.weight
+        & + .error.i
+            &:before
+                content: "El peso máximo permitido por guía no puede superar las 110 libras"
+                padding: 0
+                margin-left: 0
+                margin-top: 5px
+
     &.name
         & + .error.i
-                &:before
-                    content: "Nombre completo / Compañia*."
+            &:before
+                content: "Nombre completo / Compañia*."
     &.message
         & + .error.i
             &:before
@@ -60,12 +99,6 @@ input
         & + .error.i
             &:before
                 content: "Escriba la ciudad."
-    &+error
-        &:before
-            display: none
-            transform: $trs-site
-        &i:before
-            display: block
     &+.error.i
         &:before
             font-size: 10px
@@ -73,6 +106,8 @@ input
             display: inline-block
             text-align: left
             padding-left: 1.3rem
+            font-weight: 700
+
 .apply.i
     text-align: center
     &:before

@@ -8,6 +8,8 @@ $base-mg-spacing: 10px
             margin: $base-mg-spacing * 10
         &--max
             margin: $base-mg-spacing  * 20
+
+    /// sm
     &_top
         &--x
             &5
@@ -27,6 +29,11 @@ $base-mg-spacing: 10px
             &100
                 margin-top: $base-mg-spacing * 10
 
+                &mov
+                    +MQMAX(S)
+                        margin-top: $base-mg-spacing * 5 !important
+                    +MQMAX(M)
+                        margin-top: $base-mg-spacing * 10 !important
                 &i
                     +MQ(S)
                         margin-top: $base-mg-spacing * 5 !important
@@ -40,6 +47,9 @@ $base-mg-spacing: 10px
                     +MQ(M)
                         margin-top: $base-mg-spacing * 10 + 50 !important
     &_bottom
+        // sm
+        &-sm-x
+            &100
         &--x
             &5
                 margin-bottom: $base-mg-spacing/2

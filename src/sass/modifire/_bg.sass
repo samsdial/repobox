@@ -4,6 +4,25 @@
     background-position: center center
     background-repeat: no-repeat
     background-size: cover
+    &_contact
+        background-image: url('#{$gitPath}theme/bg-faq.svg')
+        background-position: -300px -500px
+        background-repeat: no-repeat
+        background-size: cover
+        background-color: transparent
+    &--triangle
+        background-image: url('#{$gitPath}theme/bg-mov-01.svg')
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
+        background-color: transparent
+        display: flex
+        align-items: center
+        justify-items: center
+        height: 915px
+        +MQ(L)
+            background-image: url('#{$gitPath}theme/bg-tria-01.svg')
+            height: 1597px
     &_item
         background-position: center center
         background-repeat: no-repeat

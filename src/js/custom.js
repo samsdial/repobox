@@ -24,8 +24,8 @@ $(document).ready(function($){
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        //autoplay: true,
-        //autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 4000,
         asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
@@ -40,26 +40,34 @@ $(document).ready(function($){
     $('.slider_recommend').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
                 }
             }
         ]
@@ -70,6 +78,13 @@ $(document).ready(function($){
         slidesToScroll: 1,
         arrows: false,
         responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
             {
                 breakpoint: 1024,
                 settings: {
@@ -96,12 +111,20 @@ $(document).ready(function($){
     $('.slider_quote_medios').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        //autoplay: true,
-        //eautoplaySpeed: 2000,
+        arrows: false,
+        autoplay: true,
+        eautoplaySpeed: 5000,
+    });
+    $('.slider_about').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        eautoplaySpeed: 4000,
     });
     $(document).on("scroll", function(){
         if
-        ($(document).scrollTop() > 600){
+        ($(document).scrollTop() > 50){
             $("#header").addClass("navbar_onscroll");
         }
         else
@@ -111,7 +134,7 @@ $(document).ready(function($){
     });
     $(document).on("scroll", function(){
         if
-        ($(document).scrollTop() > 600){
+        ($(document).scrollTop() > 50){
             $("#logo").addClass("logo_cobox--color");
         }
         else
@@ -129,23 +152,36 @@ $(document).ready(function($){
             declared != undefined && declared != null && declared != "") {
             if(weight > 0 && declared > 0) {
                 if(weight > 110) {
-                    alert('el peso máximo permitido por guía no puede superar las 110 libras.')
+                    //alert('el peso máximo permitido por guía no puede superar las 110 libras.');
+                    $(".weight + .error").addClass("i");
+                    $("#weight").focus();
+                    $(".realvalue + .alerta").removeClass("i");
+                    $(".diligence + .alerta").removeClass("a");
                 }else{
                     weight < 7 ? weight = 7 : weight = weight;
                     declared < 30 ? declared = 30 : declared = declared;
                     declared <=200 ? percentage = 0.14 : percentage = 0.30;
                     total = ( (weight*1.70) + (declared*percentage) + 5 );
                     total = (Math.round(total*100)/100).toFixed(1);
-                    $('#total').text('$'+total+' USD');
+                    $('#total').text('$'+total);
                 }
             }else{
-                alert('Los valores deben ser superiores a 0');
+                //alert('Los valores deben ser superiores a 0');
+                $(".realvalue + .alerta").addClass("i");
+                $(".diligence + .alerta").removeClass("a");
+                $(".weight + .error").removeClass("i");
             }
         }else{
-            alert('Diligenciar los campos');
+            //alert('Diligenciar los campos');
+            $(".diligence + .alerta").addClass("a");
+            $(".weight + .error").removeClass("i");
+            $(".realvalue + .alerta").removeClass("i");
         }
     });
-
+    //Expaden Checked true
+    $('#expanded').change(function() {
+        $('#checkboxdiv').toggle();
+    });
     // Validacion FF
     $('#submit').click(function(){
         var name        = $("#name").val();
